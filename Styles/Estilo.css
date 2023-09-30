@@ -1,0 +1,100 @@
+/*Barra de navegación*/
+/*https://www.hostinger.es/tutoriales/crear-un-menu-horizontal-simple-css*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 9px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline; 
+    margin-right: -5px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: hotpink;
+    font-size: 16px;
+    border: solid 1px white;
+    padding: 10px;
+    background-color: #333;
+    transition: background-color .5s ease-out 50ms;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(168, 0, 0);
+    background-color: rgb(153, 153, 153);
+}
+/*Horario*/
+html {
+    background-color: antiquewhite;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid;
+}
+.index {
+    Color: red;
+    background-color: azure;
+}
+/* Clases */
+.horario{
+    border: 1px solid;
+}
+.recreo{
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  .iso{
+    background-color: dodgerblue;
+  }
+  .fhw{
+    background-color: darkred;
+  }
+  .lmsgi{
+    background-color: cyan;
+  }
+  .par{
+    background-color: darkorange;
+  }
+  .gbd{
+    background-color: darkgoldenrod;
+  }
+  .fol{
+    background-color: indigo;
+  }
+/*Formato*/
+h1 {
+  padding-left: 3%;
+  color: darkred;
+  background-color: rgb(192, 182, 165);
+}
+h2 {
+  color: rgb(0, 0, 192);
+  margin-left: 5%;
+}
+p {
+  margin-left: 7%;
+  margin-right: 3%;
+}
+ul {
+  margin-left: 7%;
+}
+ol {
+  margin-left: 7%;
+}
