@@ -111,6 +111,11 @@ $menu_WIDTH: 150px;
 .menu-title_5th:before { border-top-color: #5cdb58; }
 .menu-title_5th:hover:before { border-top-color: #48cb4a; }
 
+.menu-title_6th { background: #58db63; }
+.menu-title_6th:hover { background: #48cb4a; }
+.menu-title_6th:before { border-top-color: #5cdb58; }
+.menu-title_6th:hover:before { border-top-color: #48cb4a; }
+
 .menu-dropdown {
   min-width: 100%;
   padding: 15px 0;
