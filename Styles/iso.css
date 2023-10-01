@@ -33,6 +33,7 @@ $menu_WIDTH: 150px;
 }
 
 .menu-title {
+    margin-right: 5px;
   display: block;
   width: $menu_WIDTH;
   height: 40px;
