@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/Estilo.css">
+    <link rel="stylesheet" href="../Styles/Estilo.css">
     <title>
         GBD
     </title>
@@ -50,11 +50,12 @@
     </nav>    
 </header>
 <body>
+    <h1>Tema 1</h1>
     <h1>Gestión de bases de datos</h1>
     <p><b>Sistema informático</b>: Colección de personas, procedimientos y equipos que están construidos, 
-    pegados y mantenidos con el fin de recoger, registrar, almacemar, recuperar y 
-    visualizar información.</p>
-    <p>Formado por:</p>
+        pegados y mantenidos con el fin de recoger, registrar, almacemar, recuperar y 
+        visualizar información.</p>
+    <p> Formado por:</p>
     <ul>
         <li>
             Contenido (datos)
@@ -73,7 +74,7 @@
         La gestión de los datos inicialmente (en un sistema informático) se
         hacia a través de ficheros tradicionales.
     </p>
-    <p>Problemas:</p>
+    <p> Problemas:</p>
     <ul>
         <li>
             Ocupación inutil de espacio secundario en disco.
@@ -92,7 +93,7 @@
     <p>
         Un dato se almacena en un único lugar y está disponible para todas las aplicaciónes.
     </p>
-    <p>Ventajas de las GBD:</p>
+    <p> Ventajas de las GBD:</p>
     <ul>
         <li>
             No ocupamos más espacio.
@@ -169,7 +170,7 @@
     <br>
 
     <h1>Estructura de un sistema de base de datos</h1>
-    <p>Una base de datos es un conjunto de datos almacenados  en un soporte informático, y se deben
+    <p> Una base de datos es un conjunto de datos almacenados  en un soporte informático, y se deben
         de cumplir los siguientes requisitos:</p>
     <ol>
         <li>
@@ -184,28 +185,28 @@
     <h1>Esquemas de una base de datos</h1>
     <span>Este modelo se llama ansi/sparc (el de la foto que pondremos luego).</span>
     <h2>Esquema Conceptual</h2>
-    <p>Se incluyen todos los datos que necesita la organización y las inter-relaciones
+    <p> Se incluyen todos los datos que necesita la organización y las inter-relaciones
         entre ellos junto con las <b>restricciones de integridad</b> de los datos.
         <u>Se necesitan los datos de la organización, relaciones entre estos y las relaciones
         de integridad referencial.</u>Todos los datos de la base de datos deben constar 
         en el esquema conceptual. </p>
     <h2>Esquema Externo</h2>
-    <p>La visión de un usuario de una base de datos. Habrá tantas visiónes de usuarios
+    <p> La visión de un usuario de una base de datos. Habrá tantas visiónes de usuarios
         como aplicaciones (medicos, administradores, técnicos). A cada visión que tiene 
         un usuario se le denomina <b>esquema externo</b>.</p>
     <h2>Esquema Interno o Nivel Físico</h2>
-    <p>En este nivel se define la estrategia de almacenamiento, los caminos de acceso
+    <p> En este nivel se define la estrategia de almacenamiento, los caminos de acceso
         (índice), la estrategia de emplazamiento de los datos, técnicas de compresión
         de datos, técnicas de ajuste de funcionamiento. </p>
     <br>
     <hr>
     <h1>Tema 2</h1>
     <h1>Conceptos y funciones de los SGBD</h1>
-    <p>Para cubrir todas las necesidades de información de una organización, se 
+    <p> Para cubrir todas las necesidades de información de una organización, se 
         requiere un software capaz de ser el interfaz entre la comunidad de usuarios
         y la base de datos. </p>
     <h2>SGBD</h2>
-    <p>El Sistema Gestor de Bases de Datos es un conjunto de programas, procedimientos y 
+    <p> El Sistema Gestor de Bases de Datos es un conjunto de programas, procedimientos y 
         lenguajes que suministra tanto a los usuarios informáticos como a los usuarios
         no informáticos los medios necesarios para describir, recuperar y manipular 
         los datos almacenados en una base de datos garantizando su integridad, 
@@ -214,16 +215,43 @@
         de datos, es la interfaz entre los usuarios y la base de datos. </p>
         <br>
     <h1>Funciones Basicas de un SGBD</h1>
-    <h2>Funcion de descripción o definición</h2>
-    <p>El SGBD debe definir que tipos de dato se van a almacenar en una base de datos, 
+    <h2>Funcion de descripción o definición (DDL)</h2>
+    <p> El SGBD debe definir que tipos de dato se van a almacenar en una base de datos, 
         este debe permitir al administrador especificar los elementos que integran
         la base de datos, su estructura, las relaciones entre ellos, las regals 
         de integridad, características de tipo físico y las vistas lógicas de 
         los usuarios. Entonces, mediante un lenguaje de definición de datos (DDL)
         el SGBD permite al ADB (admin) que defina todos los esquemas externos,
         el único esquema lógico global (conceptual) y el único esquema interno.  </p>
-    <h2>Función de manipulación</h2>
-    <p>DML</p>
+    <h2>Función de manipulación (DML)</h2>
+    <p> El lenguaje DML (Data Manipulation Languaje) sirve para manipular los datos.
+        Permite buscar, añadir, suprimir o modificar los datos de la BD. </p>
+    <p> Hay un lenguaje de manipulación de datos llamado DML que permite a los 
+        usuarios realizar todas estas operaciones. </p>
+    <h2>Función de utilización o control (DCL)</h2>
+    <p> Nos permite reestructurar la BD, obtener estadísticas, permisos, copias de 
+        seguridad, mecanismos para el rearranque del sistema. </p>
+    <br><br>
+    <p><b>El 95% de los SGBD ofrecen el lenguaje SQL, el cuál nos proporciona instrucciónes
+        DDL, DML y DCL. </b></p>
+    <h1>Funcionamiento del SGBD</h1>
+    <p>El SGBD es la interfaz entre el usuario y la BD. A su vez, va a utilizar
+        al S.O para acceder a la base de datos, es decir, el usuario hace 
+        peticiones al SGBD, y este las traducira al S.O. </p>
+    <h1>Arquitectura ANSI/SPARK</h1>
+    <p> El grupo ANSI/SPARK denominó niveles de abstracción a estos 3 tipos de esquemas
+        y a los SGBD que soportan estos 3 niveles los denomina SGBD con arquitectura a 
+        3 niveles. </p>
+    <p> El objetivo de esta arquitectura es alcanzar la independencia 
+        física y lógica </p>
+    <p> La independencia física de los datos refleja el hecho de que cuando se 
+        intruduzcan cambios en la organización física de los datos o en el Hardware
+        estos cambios no se reflejan en los programas de aplicación que manipulan 
+        esos datos. </p>
+    <p> La indepnedencia lógica refleja el hecho de que la vista de los datos 
+        que corresponde a cualquier programa de aplicación no está vinculada 
+        a la representación lógica global. </p>
+    <p> </p>
 </body>
 </body>
 </html>
