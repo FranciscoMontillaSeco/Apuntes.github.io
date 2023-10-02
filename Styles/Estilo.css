@@ -53,6 +53,9 @@ td {
     background-color: azure;
 }
 /* Clases */
+table, a:link, a:visited, a:active{
+  text-decoration: none;
+}
 .horario{
     border: 1px solid;
 }
@@ -64,16 +67,16 @@ td {
     background-color: dodgerblue;
   }
   .fhw{
-    background-color: darkred;
+    background-color: crimson;
   }
   .lmsgi{
     background-color: cyan;
   }
   .par{
-    background-color: darkorange;
+    background-color: coral;
   }
   .gbd{
-    background-color: darkgoldenrod;
+    background-color: forestgreen;
   }
   .fol{
     background-color: indigo;
