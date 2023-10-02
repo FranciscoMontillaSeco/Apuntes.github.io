@@ -49,3 +49,181 @@
         </ul>
     </nav>    
 </header>
+<body>
+    <h1>Gestión de bases de datos</h1>
+    <p><b>Sistema informático</b>: Colección de personas, procedimientos y equipos que están construidos, 
+    pegados y mantenidos con el fin de recoger, registrar, almacemar, recuperar y 
+    visualizar información.</p>
+    <p>Formado por:</p>
+    <ul>
+        <li>
+            Contenido (datos)
+        </li>
+        <li>
+            Hardware (físico)
+        </li>
+        <li>
+            Software (lógico)
+        </li>
+        <li>
+            RRHH (programadores, técnicos, etc...)
+        </li>
+    </ul>
+    <p>
+        La gestión de los datos inicialmente (en un sistema informático) se
+        hacia a través de ficheros tradicionales.
+    </p>
+    <p>Problemas:</p>
+    <ul>
+        <li>
+            Ocupación inutil de espacio secundario en disco.
+        </li>
+        <li>
+            Aumento del tiempo de procesamiento.
+        </li>
+        <li>
+            Posibilidad de información incoherente.
+        </li>
+    </ul>
+    <p>
+        A raiz de ello se hicieron las primeras bases de datos para almacenar
+        los datos en 1 solo lugar.
+    </p>
+    <p>
+        Un dato se almacena en un único lugar y está disponible para todas las aplicaciónes.
+    </p>
+    <p>Ventajas de las GBD:</p>
+    <ul>
+        <li>
+            No ocupamos más espacio.
+        </li>
+        <li>
+            Disminuimos los tiempos de procesamiento.
+        </li>
+        <li>
+            No hay posibilidad de inconsistencia/incoheréncia.
+        </li>
+        <li>
+            Existe independencia entre los datos y los procesos.
+        </li>
+        <li>
+            Los datos devuelven todas las inconcluencias.
+        </li>
+    </ul>
+    <br>
+
+    <h1>Ventajas de las bases de datos </h1>
+    <ol>
+        <li>
+            <h3>Ventajas referidas a los datos</h3>
+            <ul>
+                <li>
+                Los datos son independientes d elos tratamientos
+            </li>
+            <li>
+                Hay mejor disponibilidad de la información.
+            </li>
+            <li>
+                Mayor eficiencia en la recogida, entrada y almacenamiento del sistema
+            </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Referidas a los reslultados obtenidos</h3>
+            <ul>
+                <li>
+                    Mayor coherencia en los datos. (1 dirección por persona en una BD)
+                </li>
+                <li>
+                    Mayor valor informativo. (datos siempre correctos)
+                </li>
+                <li>
+                    Mejor y más normalizada documentación de la información.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Referida a los usuarios</h3>
+            <ul>
+                <li>
+                    Acceso mucho más rapido y sencillo.
+                </li>
+                <li>
+                    Mayor facilidad para compartir los datos.
+                </li>
+                <li>
+                    Mayor flexibilidad para atender demandas cambiantes.
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <br>
+
+    <h1>Inconveniente del enfoque de bases de datos</h1>
+    <ul>
+        <li>Instalación costosa.</li>
+        <li>Personal especializado.</li>
+        <li>Implantación larga y "complicada".</li>
+        <li>Falta de rentabilidad a corto plazo</li>
+    </ul>
+    <br>
+
+    <h1>Estructura de un sistema de base de datos</h1>
+    <p>Una base de datos es un conjunto de datos almacenados  en un soporte informático, y se deben
+        de cumplir los siguientes requisitos:</p>
+    <ol>
+        <li>
+            Los datos deben ser estructurados y deben estár interrelacionados.
+        </li>
+        <li>No hay redundancia de la información.</li>
+        <li>Hay independencia entre datos y procesos.</li>
+        <li>La definición de los datos es única y está integrada en la base de datos</li>
+    </ol>
+    <br>
+
+    <h1>Esquemas de una base de datos</h1>
+    <span>Este modelo se llama ansi/sparc (el de la foto que pondremos luego).</span>
+    <h2>Esquema Conceptual</h2>
+    <p>Se incluyen todos los datos que necesita la organización y las inter-relaciones
+        entre ellos junto con las <b>restricciones de integridad</b> de los datos.
+        <u>Se necesitan los datos de la organización, relaciones entre estos y las relaciones
+        de integridad referencial.</u>Todos los datos de la base de datos deben constar 
+        en el esquema conceptual. </p>
+    <h2>Esquema Externo</h2>
+    <p>La visión de un usuario de una base de datos. Habrá tantas visiónes de usuarios
+        como aplicaciones (medicos, administradores, técnicos). A cada visión que tiene 
+        un usuario se le denomina <b>esquema externo</b>.</p>
+    <h2>Esquema Interno o Nivel Físico</h2>
+    <p>En este nivel se define la estrategia de almacenamiento, los caminos de acceso
+        (índice), la estrategia de emplazamiento de los datos, técnicas de compresión
+        de datos, técnicas de ajuste de funcionamiento. </p>
+    <br>
+    <hr>
+    <h1>Tema 2</h1>
+    <h1>Conceptos y funciones de los SGBD</h1>
+    <p>Para cubrir todas las necesidades de información de una organización, se 
+        requiere un software capaz de ser el interfaz entre la comunidad de usuarios
+        y la base de datos. </p>
+    <h2>SGBD</h2>
+    <p>El Sistema Gestor de Bases de Datos es un conjunto de programas, procedimientos y 
+        lenguajes que suministra tanto a los usuarios informáticos como a los usuarios
+        no informáticos los medios necesarios para describir, recuperar y manipular 
+        los datos almacenados en una base de datos garantizando su integridad, 
+        confidencialidad y seguridad.</p>
+        <p>El SGBD es el único que accederá a la base 
+        de datos, es la interfaz entre los usuarios y la base de datos. </p>
+        <br>
+    <h1>Funciones Basicas de un SGBD</h1>
+    <h2>Funcion de descripción o definición</h2>
+    <p>El SGBD debe definir que tipos de dato se van a almacenar en una base de datos, 
+        este debe permitir al administrador especificar los elementos que integran
+        la base de datos, su estructura, las relaciones entre ellos, las regals 
+        de integridad, características de tipo físico y las vistas lógicas de 
+        los usuarios. Entonces, mediante un lenguaje de definición de datos (DDL)
+        el SGBD permite al ADB (admin) que defina todos los esquemas externos,
+        el único esquema lógico global (conceptual) y el único esquema interno.  </p>
+    <h2>Función de manipulación</h2>
+    <p>DML</p>
+</body>
+</body>
+</html>
