@@ -1,0 +1,46 @@
+/*Barra de navegación*/
+/*https://www.hostinger.es/tutoriales/crear-un-menu-horizontal-simple-css*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: forestgreen;
+}
+
+header {
+    background-color: #333;
+    padding: 9px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline; 
+    margin-right: -5px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: hotpink;
+    font-size: 16px;
+    border: solid 1px white;
+    padding: 10px;
+    background-color: #333;
+    transition: background-color .5s ease-out 50ms;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(168, 0, 0);
+    background-color: rgb(153, 153, 153);
+}
+body{
+    background-color: coral;
+}
+
+h2{
+    font-style: oblique initial;
+}
