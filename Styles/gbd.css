@@ -38,9 +38,6 @@ nav a:hover {
     background-color: rgb(153, 153, 153);
 }
 body{
-    background-color: coral;
+    background-color:rgb(33, 116, 33);
 }
 
-h2{
-    font-style: oblique initial;
-}
