@@ -201,10 +201,10 @@
                             Unidad de memoria tambien con dos registros
                             <ol>
                                 <li>
-                                    Registro de dirección (RD)  
+                                    Registro de dirección (MAR)  
                                 </li>
                                 <li>
-                                    Registro de palabara (RM)
+                                    Registro de palabara (RDM)
                                 </li>
                             </ol>
                         </li>
@@ -228,7 +228,7 @@
                     <br>
                 </p>
                 <h3>
-                    UC
+                    Unidad de Control (UC)
                 </h3>
                 <p>
                     La UC tiene como objetivo leer las instrucciones maquina almacenadas en la memoria principal.
@@ -240,9 +240,48 @@
                     <br>
                     La ALU tiene su propiao registro para hacer estos calculos.
                     <br>
-                    La memoria principal formado por un grupo de celdas de igual tamaños que se identifican de forma idividual a través de una dirección y sobre las que se podian realizar tareas de leer o escribir.
+                    La memoria principal formado por un grupo de celdas de igual tamaño que se identifican de forma idividual a través de una dirección y sobre las que se podian realizar tareas de leer o escribir.
+                    <br>
+                    Aquí tenemos dos registros muy importantes que son Registro de dirección de memoria (MAR) y el registro de palabra (RDM).
+                    <br>
+                    Cada  uno va por su respecitivo bus el MAR va por el de dirección y el MDR por el de datos.
+                    <br>
+                    Cada celda está formado por un conjunto de bits denominandose palabra de memoria, que son el elemento básico de información y cuyos valores 0 y 1 están atados a estado de tensión diferentes.
+                    <br>
+                    A la memoria se accede a traves de unos registros integrados en el microprocesador llamado MAR (Memory Address Release) y el MDR.
+                </p>
+            </article>
+            <article>
+                <h3>
+                    MAR ( )
+                </h3>
+                    El MAR es un registro específico de alta velocidad integrado en el microprocesador, este registro tiene la dirección del dato que se quiere leer o escribir en memoria. 
+                    <br>
+                    El registro está conectado con el bus de direcciones (es unidireccional) y su contenido se refleja en ese bus. El número de direcciones que se pueden direccionar con una CPU depende del tamaño del MAR, si el MAR tiene x de tamaño se podrán direccionar 2 a la x 
                     <br>
 
+                    <br>
+                </p>    
+            </article>
+            <!-- 11/10/2023-->
+            <article>
+                <h3>
+                    MDR ( )
+                </h3>
+                <p>
+                Es un registro especifico de alta velocidad y de poca capacidad, está conectado al bus de datos, y através de el la CPU lee o escribr un dato ambiguo y ki es decir para acceder a una celffa de memirua hay que depositar otrave el MAR y se recoje el dato en MDR conenctado a l bus de datos.
+                <br>
+                Si lo que quiero es ecribir en memoria se depositará en el MAR la direccion de donde quiero escribir y el el MDR se depositará el dato.
+                <br>
+                    A su vez el microprocesador dispondrá de otra serie de registros de porpósito general con el fin de llevar a cabo las instrucciones. Por ejemplo el PC, el IR(registro instrucion), el MAR , el MDR y registros de porposito general, estos registros forman parte del primer nivel de memoria siendo esta la más rápida del computador.
+                </p>
+            </article>
+            <article>
+                <h3>
+                    Unidad Arimetco Lógica (ALU)
+                </h3>
+                <p>
+                    
                 </p>
             </article>
         </section>

@@ -1,7 +1,7 @@
 /*Barra de navegación*/
 /*https://www.hostinger.es/tutoriales/crear-un-menu-horizontal-simple-css*/
 body {
-    margin: 0;
+    margin: 5px;
     font-family: Arial, sans-serif;
 }
 
@@ -90,14 +90,4 @@ h1 {
 h2 {
   color: rgb(0, 0, 192);
   margin-left: 5%;
-}
-p {
-  margin-left: 7%;
-  margin-right: 3%;
-}
-ul {
-  margin-left: 7%;
-}
-ol {
-  margin-left: 7%;
 }
