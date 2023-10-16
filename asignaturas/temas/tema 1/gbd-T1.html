@@ -80,7 +80,9 @@
             <p>
                 La gestión de los datos originalmente en un sistema informático se hacía a través de ficheros tradicionales.
                 <ol>
+                    <b>
                     Problemas:
+                    </b>
                     <li>
                         Ocupación inútil de memoria secundario(disco).
                     </li>
@@ -98,7 +100,9 @@
                     </li>
                 </ol>
                 <ol>
+                    <b>
                     Ventajas:
+                    </b>
                     <li>
                         No ocupamos más espacios por no tener redundancia entre ficheros.
                     </li>
@@ -118,7 +122,131 @@
             </p>
         </article>
         <article>
-            
+            <h2>
+                VENTAJAS DE ENFOQUE
+            </h2>
+            <ol>
+                <li>
+                    <ul>
+                    <b>
+                        Referidas a los datos
+                    </b>                    
+                    <li>
+                        Los datos son independientesde los tratamientos
+                    </li>
+                    <li>
+                        Mejor disponibilidad de la información
+                    </li>
+                    <li>
+                        Mayor eficiencia en la recogida, codificación y entrada al sistema de información.
+                    </li>                    
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <b>
+                            Referidas a los resultados obtenidos
+                        </b>
+                        <li>
+                            Mayor coherencia, no hay posibilidad de consultar un dato y te devuelva dos datos distintos.
+                        </li>
+                        <li>
+                            Mayor valor informativo, los datos siempre son correctos si me metieron correctamente.
+                        </li>
+                        <li>
+                            Mejor y más normalizada documentación de la información
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <b>
+                            Referida a los usuarios
+                        </b>
+                        <li>
+                            Acceso mucho más rápido y sencillo
+                        </li>
+                        <li>
+                            Mayor facilidad para compartir los datos
+                        </li>
+                        <li>
+                            Mayor felxibilidad para atender demandas cambiantes
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </article>
+        <article>
+            <h2>
+                INCONVENIENTES DEL ENFOQUE
+            </h2>
+            <ol>
+                <li>
+                    Infraestructura costosa
+                </li>
+                <li>
+                    Personal especializado
+                </li>
+                <li>
+                    Implantación larga y complicada
+                </li>
+                <li>
+                    Falta de rentabilidad a corto plazo
+                </li>
+            </ol>
+        </article>
+        <article>
+            <h2>
+                ESTRUCTURA DE BASE DE  DATOS
+            </h2>
+                <p>
+                    Una base de datos ens un conjunto de datos almacenados en un soporte informático y se deben de cumplir los siguientes datos almacenados en un soporte informático y se deben cumplir los siguientes requisitos:
+                    <ol>
+                        <li>
+                            Los datos deben ser estructurados y deben tener formato (Val, Bul, Char, etc).
+                        </li>
+                        <li>
+                            No hay redundancia de la información, lso datos se almacenan en un único lugar.
+                        </li>
+                        <li>
+                            Hay idependencia entre datos y procesos
+                        </li>
+                        <li>
+                            La definición de los datos es única y está integrada en la base de datos.
+                        </li>
+                    </ol>
+                </p>
+        </article>
+        <article>
+            <h2>
+                MODELO ANSI/SPARC
+            </h2>
+            <ol>
+                <li>
+                    El <b>esquema externo</b> es la visión que tiene un usuario de la base de datos. Habrá tantas visiones de usuarios como aplicaciones (programas y conexión de usuario). A cada visión que tiene el usuario de la base de datos se le denomina esquema externo.
+                </li>
+                <li>
+                    En el <b>esquema conceptual</b> se incluyen todos los datos que necesita la organización y las interrrelaciones entre ellos, junto con las restrincciones de integridad de los datos. Un ejemplo de integridad es que no es posible dar de alta un periodo sin dar de alta previamente al cliente relacionado, esto se llama <s>integridad referencial</s>. Todos los datos presentes en la base de datos deben estar referenciados en el esquema conceptual.
+                </li>
+                <li>
+                    En el <b>modelo físico</b>o <b>interno</b> se definen:
+                    <ul>
+                        <li>
+                            Estrategia de almacenamiento
+                        </li>
+                        <li>
+                            Caminos de acceso (índices)
+                        </li>
+                        <li>
+                            La estrategia de emplazamiento de los datos
+                        </li>
+                        <li>
+                            Técnicas de compresión de datos
+                        </li>
+                            Técnicas de funcionamiento (tunning y paginación)
+                    </ul>
+                </li>
+            </ol>
         </article>
     </section>    
 </body>

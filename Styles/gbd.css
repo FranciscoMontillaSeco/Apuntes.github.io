@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgba(34, 139, 34, 0.508);
+    background-color: rgba(33, 207, 33, 0.959);
 }
 
 header {
@@ -37,7 +37,3 @@ nav a:hover {
     color: rgb(168, 0, 0);
     background-color: rgb(153, 153, 153);
 }
-body{
-    background-color:rgb(33, 116, 33);
-}
-
