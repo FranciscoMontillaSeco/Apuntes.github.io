@@ -56,6 +56,52 @@
     <section>
         <article>
             <p>
+                El primer paso del diseño de base de datos es el esquema cinceptual que contendrá toda la información que manuipula la organización o la empresa. Es transformar el mundo real al mundo de las ideas.
+                <br>
+                El segundo paso es pasar el esquema conceptual al esquema lógico, que es un idioma más entendible por el ordenador.
+                <br>
+                El último paso es transformar el esquema lógico al esquema interno.
+                <br>
+                En resumen, en el paso 1 se trata de abstraer u obtener información que manipula y plasmarla en unas serie de conceptos o ideas que reflejan ese mundo real. A ese proceso se le llama modelización.
+                <ul>
+                    <li>
+                        <b>
+                            Definición de modelización:
+                        </b>
+                        es la definición de un mundo abstracto y teórico tal que las conclusiones que se pueden sacar de él  coinciden con las manisfestaciones aparentes en el mundo real.
+                    </li>
+                </ul>
+                <br>
+                El modelo conceptual de datos más extendido es el modelo E/R (Entidad/Relación)
+            </p>
+        </article>
+        <article>
+            <h2>
+                Características modelo conceptual:
+            </h2>
+            <ol>
+                <li>
+                    Es independiente del SGBD, ya que decidiremos cual usar en el esquema interno.
+                </li>
+                <li>
+                    Tiene el nivel de abstracción más alto, medido en términos de los que me alejo de las BBDD físicas. 
+                </li>
+                <li>
+                    Nivel semántico mayor. Es el punto más cercano al mundo real.
+                </li>
+                <li>
+                    Es la insterfaz entre el informático y el usuario.
+                </li>
+            </ol>
+            <p>
+                Una vez hecho este paso pasamaos al lógico
+            </p>
+        </article>
+        <article>
+
+        </article>
+        <article>
+            <p>
                 Las entidades u sujetos son objetos pasivos que no realizan nada.
                 Las relaciones u verbos son aquellas acciones que realizan las entidades.
                 <ul>
@@ -96,12 +142,67 @@
                     </li>
                     <img src="" alt="">
                 </ol>
+                <h3>
+                    EJ - 4
+                </h3>
+                <ol>
+                    <li>
+
+                    </li>
+                </ol>
+                <h3>
+                    EJ - 5
+                </h3>
+                <ol>
+                    <li>
+
+                    </li>
+                </ol>
+                <h3>
+                    EJ - 6
+                </h3>
+                <ol>
+                    <li>
+
+                    </li>
+                </ol>
+                <h3>
+                    EJ - 7
+                </h3>
+                <ol>
+                    <li>
+
+                    </li>
+                </ol>
             </p>
             <h3></h3>
         </article>
+        
+        <article>
+            <ol>
+                <h2>
+                    Modelo E/R
+                </h2>
+                <li>
+                    Entidades
+                </li>
+                <li>
+                    Relaciones
+                </li>
+                <li>
+                    Atributos
+                </li>
+                <li>
+                    Identificadores
+                </li>
+                <li>
+                    Cardinalidad
+                </li>
+            </ol>
+        </article>
         <article>
             <h2>
-                Identificadores
+                IDENTIFICADORES
             </h2>
             <ul>
                 <li>
@@ -111,6 +212,39 @@
                     El indentificador se consttruye concatenando los indentificadores de los conjuntos de entidades relacionadas debe distinguir todas las relaciones en el conjunto de relaciones.
                 </li>
             </ul>
+        </article>
+        <article>
+            <h2>
+                RELACIONES
+            </h2>
+            <p>
+                <ul>
+                    A partir de esto hacemos nuevas nose que dependiendo del concepto que serán :
+                    <br>
+                    <li>
+                        <b>
+                        Subconjunto - 
+                        </b>
+                        Aparece cuando se observa que en el mundo real hay entidades que aunque pertenecen al mismo conjunto de entidades se relacionan con el resto de la organización de diferente manera.
+                    </li>
+                    <li>
+                        <b>
+                            IS A - 
+                        </b>
+                        A la entidad inicial se la denomina entidad fuente de las que mana el resto y a los subconjuntos de entidades que se construyen al considerar alguna característica especial de la entidad fuente se le denomina subconjuntos. La relación que se establece entre la fuente y los subconjuntos se denomina IS A y al concepto se le llama especialización. 
+                    </li>
+                    <li>
+                        El paso inverso es la <b>generalización</b> es convieniente combinar conjuntos de entidades diferentes en un nuevo conjunto de entidades, creando un conjunto de entidades no uniforme, en el sentido en que las entidades del nuevo conjunto no son del mismo tipo. 
+                        <br>
+                        Ejemplo: 
+                        <br>
+                        <b>E</b> tiene el subconjunto de E1 y E2 a E se le considera conjunto no uniforme y contiene todas los atributos de E1 y E2 se indica con una flecha de los subconjuntos. Es un conjunto uniforme puesto que contiene entidades de distintos tipos, hay que pensar en el identificador del conjunto <b>E</b>, se trata también de una relación ISA pero indicando al conjunto. Obtenemos dos conjuntos de entidades que unidos forman una entidad de más alto nivel. Si la generalización se hace porque hemos observado que hay un atributo común entre entidades, el nuevo conjunto de entidades tendrá también ese atributo.
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </p>
         </article>
     </section>
 </body>
