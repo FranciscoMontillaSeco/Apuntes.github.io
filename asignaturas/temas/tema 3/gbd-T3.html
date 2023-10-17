@@ -72,7 +72,7 @@
                     </li>
                 </ul>
                 <br>
-                El modelo conceptual de datos más extendido es el modelo E/R (Entidad/Relación)
+                El modelo conceptual de datos más extendido es el modelo E/R (Entidad/Relación).
             </p>
         </article>
         <article>
@@ -94,95 +94,54 @@
                 </li>
             </ol>
             <p>
-                Una vez hecho este paso pasamaos al lógico
+                Una vez hecho este paso pasamaos al lógico.
             </p>
         </article>
         <article>
-
-        </article>
-        <article>
-            <p>
-                Las entidades u sujetos son objetos pasivos que no realizan nada.
-                Las relaciones u verbos son aquellas acciones que realizan las entidades.
-                <ul>
-                Y podemos ausmir estas reglas:
+            <h2>
+                Características del modelo lógico:
+            </h2>
+            <ol>
                 <li>
-
+                    Dependencia del SGBD(Si es relacional o no).
                 </li>
-                </ul>
-                <h2>
-                    EJERCICIOS
-                </h2>
-                <h3>
-                    EJ - 1
-                </h3>
-                <ol>
-                    <li>
-
-                    </li>
-                </ol>
-                <h3>
-                    EJ - 2
-                </h3>
-                <ol>
-                    <li>
-                        Los estudiantes siguen cursos en el colegio.
-                    </li>
-                </ol>
-                <img src="" alt="">
-                <h3>
-                    EJ - 3
-                </h3>
-                <ol>
-                    <li>
-                        Los conductores son conductores de varios veiculos
-                    </li>
-                    <li>
-                        Los vehiculos solo pueden tener un conductor
-                    </li>
-                    <img src="" alt="">
-                </ol>
-                <h3>
-                    EJ - 4
-                </h3>
-                <ol>
-                    <li>
-
-                    </li>
-                </ol>
-                <h3>
-                    EJ - 5
-                </h3>
-                <ol>
-                    <li>
-
-                    </li>
-                </ol>
-                <h3>
-                    EJ - 6
-                </h3>
-                <ol>
-                    <li>
-
-                    </li>
-                </ol>
-                <h3>
-                    EJ - 7
-                </h3>
-                <ol>
-                    <li>
-
-                    </li>
-                </ol>
+                <li>
+                    Está más próximo al ordenador, por lo tanto hay pérdida de capacidad semántica.
+                </li>
+                <li>
+                    Es la intefaz entre informático y la máquina.
+                </li>
+            </ol>
+            <p>
+                En el paso tres, una vez obtenido el esquema lógico global y teniendo en cuenta el SGBD que se va a utilizar (es el paso más dependiente del SGBD), se intenta conseguir la máxima eficiencia de cara a la máquina. 
+                <br>
+                Hay que tener en cuenta las formas de almacenamiento y los métodos de acceso.
+                <br>
+                En ocasiones estos pasos se invierten en los casos donde hay que trabajar y modificar sobre BBDD ya establecidas.    
             </p>
-            <h3></h3>
-        </article>
-        
+         
+        </article>    
         <article>
             <ol>
                 <h2>
                     Modelo E/R
                 </h2>
+                <p>
+                    Se basa en la idea de entidad y las relaciones entre entidades. El modelo entidad-relación es el más aceptado ya que es el que más facilita la relación entre informático y usuario. El primer concepto que maneja el modelo es el de entidad.
+                    <br>
+                    Una entidad para el modelo entidad/relación es cualquier persona, lugar, cosa, concepto, suceso real o abstracto de interés para la organización, es decir, que se quiere almacenar información sobre ella. En cada conjunto de entidades las propiedades que caracterizan a cada entidad toman valores distintos.
+                    <br>
+                    Las entidades se relacionan entre sí.
+                    <br>
+                    <b>
+                        En definitiva:
+                    </b>
+                     Una entidad es un objeto de interés para la organización y una relación es una interacción entre dos entidades. Una entidad en el modelo entidad-relación se representa mediante un rectángulo y las relaciones se representan mediante un rombo.
+                    <br>
+                    Las entidades son los sujetos pasivos. Son objetos que no realizan nada. Las relaciones son las acciones que realizan esos sujetos pasivos o entidades. (Entidades ~ Sujetos, Relaciones ~ Verbos)
+
+                </p>
+                <b>
                 <li>
                     Entidades
                 </li>
@@ -198,8 +157,24 @@
                 <li>
                     Cardinalidad
                 </li>
+                </b>
             </ol>
         </article>
+        <article>
+            <h2>
+                ENTIDADES
+            </h2>
+            <p>
+                Las entidades u sujetos son objetos pasivos que no realizan nada.
+                Las relaciones u verbos son aquellas acciones que realizan las entidades.
+                <ul>
+                Y podemos ausmir estas reglas:
+                <li>
+
+                </li>
+                </ul>  
+            </p>
+        </article>  
         <article>
             <h2>
                 IDENTIFICADORES
@@ -238,14 +213,135 @@
                         <br>
                         Ejemplo: 
                         <br>
-                        <b>E</b> tiene el subconjunto de E1 y E2 a E se le considera conjunto no uniforme y contiene todas los atributos de E1 y E2 se indica con una flecha de los subconjuntos. Es un conjunto uniforme puesto que contiene entidades de distintos tipos, hay que pensar en el identificador del conjunto <b>E</b>, se trata también de una relación ISA pero indicando al conjunto. Obtenemos dos conjuntos de entidades que unidos forman una entidad de más alto nivel. Si la generalización se hace porque hemos observado que hay un atributo común entre entidades, el nuevo conjunto de entidades tendrá también ese atributo.
-                    </li>
-                    <li>
-
+                        <b>E</b> tiene el subconjunto de <b>E1</b> y <b>E2</b> a <b>E</b> se le considera conjunto no uniforme y contiene todas los atributos de E1 y E2 se indica con una flecha de los subconjuntos. Es un conjunto uniforme puesto que contiene entidades de distintos tipos, hay que pensar en el identificador del conjunto <b>E</b>, se trata también de una relación ISA pero indicando al conjunto. Obtenemos dos conjuntos de entidades que unidos forman una entidad de más alto nivel. Si la generalización se hace porque hemos observado que hay un atributo común entre entidades, el nuevo conjunto de entidades tendrá también ese atributo.
                     </li>
                 </ul>
             </p>
         </article>
+        
+        <h2>
+            EJERCICIOS
+        </h2>
+        <h3>
+            EJ - 1
+        </h3>
+        <ol>
+            <li>
+                Los estudiantes siguen cursos en el colegio.
+            </li>
+            <li>
+                Los vehiculos solo pueden tener un conductor.
+            </li>
+            <img src="" alt="">
+        </ol>
+        <h3>
+            EJ - 2
+        </h3>
+        <ol>
+            <li>
+                Los conductores son conductores de varios vehículos.
+            </li>
+        </ol>
+        <img src="" alt="">
+        <h3>
+            EJ - 3
+        </h3>
+        <ol>
+            <li>
+                Los clientes hacen pedidos de piezas.
+            </li>
+            <li>
+                Las piezas se compran a porveedores en una fecha.
+            </li>
+                <img src="" alt="">
+        </ol>
+        <h3>
+            EJ - 4
+        </h3>
+        <ol>
+            <li>
+                En una empresa hay trabajadores: que hacen turnos y  también hay horarios.
+            </li>
+        </ol>
+        <h3>
+            EJ - 5
+        </h3>
+        <ol>
+            <li>
+                Los equipos tienen 1 entrenador y varios jugadores.
+            </li>
+            <li>
+                Un jugador solo está en un equipo.
+            </li>
+            <li>
+                El entrenador está en varios equipos.
+            </li>
+                <img src="" alt="">
+        </ol>
+        <h3>
+            EJ - 6
+        </h3>
+        <ol>
+            <li>
+                En una empresa trabajan en proyectos.
+            </li>
+            <li>
+                De las personas se: apellidos, nombre y fecha de nacimiento.
+            </li>
+            <li>
+                Los proyectos tienen un número y unos fondos, hay que conocer el nº de horas de cada persona que invierte en cada proyecto.
+            </li>
+        </ol>
+        <h3>
+            EJ - 7
+        </h3>
+        <ol>
+            <li>
+                Una urbanización controla porpietarios de los vehículos.
+            </li>
+            <li>
+                Queremos saber el año de compra.
+            </li>
+            <li>
+                Los coches pueden pertenecer a compañías.
+            </li>
+        </ol>
+        <h3>
+            EJ - 8 
+        </h3>
+        <ol>
+            <li>
+                Los alumnos realizan trabajos diferentes, cada trabajo se identica por un nº y se propone en una fecha.
+            </li>
+            <li>
+                Los trabajos pueden ser teóricos o con un pc.
+            </li>
+            <li>
+                A los alumnos se les otorga una nota con cada trabajo presentado.
+            </li>
+            <li>
+                Un trabajo hecho en pc se toma en cuenta el pc en que se realiza y el tiempo máximo permitido.
+            </li>
+            <li>
+                Los trabajos teóricos tienen un mínimo y un máximo de hojas.
+            </li>
+        </ol>
+        <h3>
+            EJ - 9
+        </h3>
+        <ol>
+            <li>
+                Dentro de un campus obserbamos que algunos profesores y alumnos son miembros de un club.
+            </li>
+            <li>
+                Los miembros poseen nº de miembro y tienen derecho a usar salas.
+            </li>
+            <li>
+                Las salas pueden ser usadas por miembros, se contabiliza el uso de cada miembro de las salas.
+            </li>
+        </ol>
+    </p>
+</article>
     </section>
 </body>
 </html>
