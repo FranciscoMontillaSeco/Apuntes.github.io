@@ -78,6 +78,7 @@
                 <h2>
                     Estructura básica de un oredenador
                 </h2>
+                <hr>
                 <p>
                     Como ya se adelantó en el punto anterior un sistema informático está formado por hardware y software (componentes lógicos) y humanos (humanware)
                     <br>
@@ -92,6 +93,7 @@
                     <h2>
                         Funcionamiento básico de un oredenador.
                     </h2>
+                    <hr>
                     Un sistema informático maenja información de todo tipo (números, imagenes, video), dandole entrada, salida o procesandola puesto que toda información se reperesenta de manera binaria se utilizan las siguientes medidas: 
                     <ul>
                         <li>
@@ -133,6 +135,7 @@
                 <h2>
                     ESTANDARES DE LA INFORMACIÓN
                 </h2>
+                <hr>
                 <p>
                     Desde los inicios de la informática la tecnologia de la informacion ha sido .... por la falta de documentación sobre el tema. 
                     Hoy en dia existen numerosos estadandar para tal fin.
@@ -309,6 +312,88 @@
                     Un programa es un conjunto de instrucciónes y datos que son almacenadas secuencialmente en posiciones o direcciónes sucesivas de memoria y que serán ejecutadas una detras de otra.
                 <br>
                     El funcionamiento del ordenador consistirá en ir extrayendo sucesivamente instrucciónes de la memoria principal, interpretarlas, extraer de memoria los datos empleados en la operación (operandos) y enviarlos a la unidad que realiza las operaciones (ALU).
+                </p>
+            </article>
+            <article>
+                <h2>Unidad central de procesos (UCP)</h2>
+                <hr>
+                <p>
+                    La Unidad Central de Proceso o Central Processing Unit (CPU) o procesador es el componente central del ordenador, encargado de procesar la información y de dirigir la actividad de todo el sistema informático
+                    <br>
+                    Está formada por:
+                    <ul>
+                        <li>
+                            Unidad de Control (UC): Lee, interpreta y ejecuta las instrucciónes del programa activo
+                        </li>
+                        <li>
+                            Unidad Aritmético Lógica (ALU): Ejecuta las operaciones lógicas
+                        </li>
+                        <li>
+                            Zona de registros y almacenamiento: donde se guardan los datos que se están procesando.
+                        </li>
+                    </ul>
+                    <br>
+                    Son también elementos característicos de la CPU la frecuencia de reloj (marca el ritmo de ejecución de instrucciones), la longitud de palabra de memoria o datos y la tecnología empleada (RISC/CISC)
+                </p>      
+                <h3>La Unida Aritmético Lógica o (UAL/ALU)</h3> 
+                <p> 
+                    Tiene como función la ejecución del conjunto de operaciones lógicas (AND,OR,NOT...) y aritméticas propias del ordenador. Se compone de registros y un conjunto de circuitos lógicos
+                    encargados de realizar dichas operaciones.
+                </p>    
+                <h3>La Unidad de Control (UC/CU)</h3> 
+                <p>
+                    Se encarga de governar el ordenador, para ello recive e interpreta las instrucciónes que se van a ejecutar, normalmente esas instrucciónes se transforman en una serie de 
+                    microsinstrucciónes de bajo nivel, dependientes de la arquitectura del procesador <mark>La unidad de control dispondrá de una serie de circuitería necesaria para leer la dirección de memoria 
+                    de la siguiente instrucción a ejecutar, la localizará y la guardará en el registro de instrucción (IR)</mark>, a partir de aquí hay dos posibilidades de unidad de control:
+                    <ul>
+                        <li>
+                            UC Microprogramada: Las instrucciónes están implementadas mediante una memoria de control que contiene microprogramas asociados a microinstrucciónes en las que se descomponen 
+                        </li>
+                        <li>
+                            UC Cableada: Las instrucciónes están implementadas por hardware, son más rápidas y más caras y menos adaptadas a actualizaciónes.
+                        </li>
+                    </ul>
+                    En cualquier caso, al finalizar la ejecución de una instrucción el registro contador de programa (PC) contiene la dirección de memoria donde se encuentra la siguiente instrucción a ejecutar 
+                </p>
+                <h3>Frecuencia de reloj</h3>
+                <p></p>
+                    El ordenador funciona de forma sincrona o sincronizada siguiendo una secuencia ordenada de operaciones en el tiempo, para ello necesita de un reloj que se encarga de generar
+                    impulsos, de esta forma marca el principio, la duración y el final de cada operación, dicho número de impulsos se mide en millones por segundo o MHz, la frecuencia de reloj determina la velocidad
+                    en la transferencia de un dato entre dos dispositivos conectados al mismo bus.
+                    <br>
+                    Para la transferencia completa de un dato pueden ser necesarios varios ciclos de reloj, en cada uno de los cuales son ejecutadas las operaciones más elementales de dicha transferencia.
+                    <br>
+                    La frecuencia de reloj solo es útil para comparar prestaciones entre microprocesadores de la misma familia y un mismo fabricante ya que existen otros muchos factores que determinan la 
+                    velocidad y el rendimiento de una computadora, para comparar máquinas de distintas familias se emplean programas de benchmark.
+                </p>
+                <h3>Longitud de palabra de datos</h3>
+                <p>
+                    Determina la cantidad de información que es capaz de procesar simultaneamente la CPU (Unidad de Control) en cada pulso de control, se mide en bits a mayor longitud de palabra 
+                    mayor complejidad y circuitería a emplear en la CPU, pero mayor será la potencia del proceso 
+                </p>
+            </article>
+            <article>
+                <h2>La ejecución de instrucciónes</h2>
+                <hr>
+                <p> 
+                    Toda instrucción máquina residente en memoria principal pasa por una serie de fases que van desde su captura a su interpretación y ejecución, estas fases son:
+                    <ol>
+                        <li>
+                            Carga/Busqueda/Captura (Fetch): La unidad de control envia a la memoria principal la dirección de la instrucción a ejecutar que está almacenada en el registro contador de programa (PC) y 
+                            activa las señales de control necesarias para que la memoria entregue la mencionada instrucción.
+                        </li>
+                        <li>
+                            Decodificación: La unidad de control recive la instrucción, la analiza y en su caso lee los operandos de la memoria principal, enviando su dirección y activando las correspondientes señales 
+                            de control
+                        </li>
+                        <li>
+                            Ejecución: La ALU bajo las ordenes de la unidad de control realiza la operación sobre los operandos y si es necesario se graba el resultado en la memoria principal o en un registro
+                        </li>
+                        <li>
+                            Incremento del contador de programa (PC): También denominado puntero de instrucción, de este modo se puede pasar a ejecutar la instrucción siguiente, aunque existen instrucciónes que pueden 
+                            modificar el contenido del PC, dando lugar a bifurcaciónes.
+                        </li>
+                    </ol>
                 </p>
             </article>
         </section>
