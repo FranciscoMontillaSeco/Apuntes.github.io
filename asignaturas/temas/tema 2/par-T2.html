@@ -91,6 +91,458 @@
                     No es una arquitectura de red, solo la función que debe realizar cada capa.
                 </li>
             </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Nivel
+                        </th>
+                        <th>
+                            Función
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            7.Aplicación
+                        </td>
+                        <td>
+                            Datos normalizados
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            6.Presentación
+                        </td>
+                        <td>
+                            Interpretación de los datos
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5.Sesión
+                        </td>
+                        <td>
+                            Diálogos de los mensajes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4.Transporte
+                        </td>
+                        <td>
+                            Integridad de control
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3.Red
+                        </td>
+                        <td>
+                            Encantamiento
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2.Enlace de datos
+                        </td>
+                        <td>
+                            Detección de errores
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1.Físico
+                        </td>
+                        <td>
+                            Conexión de equipos
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Describen las reglas a seguir por los equipos informáticos para que el intercambio de datos sea posible dentro de la variedad de productos.
+                <br>
+                Separar en varios módulos la complejidad de la comunicación de dos aplicaciones; cada uno tareas específicas, mejor administración y mantenimiento. Divide y vencerás.
+                <br>
+                Aplicación, presentación, sesión, transporte, red, enlace y físico.
+            </p>
+            <h3>
+                Ventajas OSI
+            </h3>
+                <ul>
+                    <li>
+                        Conectividad en todo el mundo sin tener que instalar pasarelas.
+                    </li>
+                    <li>
+                        Fácil integración de productos en la red.
+                    </li>
+                    <li>
+                        Punto de vista único en configuraciones de seguridad.
+                    </li>
+                    <li>
+                        Mejor elección de suministradores -> más competencia -> precios bajos.
+                    </li>
+                    <li>
+                        Nuevas generaciones tecnológicas sin elevados costes de inversión.
+                    </li>
+                </ul>
+                <p>
+                    Tenemos otros protocolos como el TCP/IP estandarizado en algunas organizaciones.
+                </p>
+                <h3>
+                    Razones de no uso
+                </h3>
+                <ul>
+                    <li>
+                        Protocolo OSI no ha sido probado ampliamente antes de estandarizarse.
+                    </li>
+                    <li>
+                        Son caros y difíciles de obtener el estándar.
+                    </li>
+                    <li>
+                        Complejo y con muchos niveles.
+                    </li>
+                    <li>
+                        Nuevas tecnologías (ATM) que no se ajustan al modelo OSI.
+                    </li>
+                </ul>
+        </article>
+        <article>
+            <h2>
+                Modelo
+            </h2>
+            <p>
+                Marco de actuación en el cual se definen una estructura y funciones en el proceso de una comunicación.
+                <ol>
+                    Tareas de cooperación entre los 7 niveles donde:
+                    <li>
+                        Cada nivel realiza tareas únicas y específicas.
+                    </li>
+                    <li>
+                        Un nivel conoce del nivel inmediatamente adyacente (superior e inferior).
+                    </li>
+                    <li>
+                        Un nivel se sirve de los niveles anteriores y los presta al superior.
+                    </li>
+                    <li>
+                        Los servicios de un nivel determinado son independientes de su implantación práctica.
+                    </li>
+                    <li>
+                        Los límites de cada nivel se seleccionan teniendo en cuenta que minimicen el flujo de información a través de las interfaces.
+                    </li>
+                </ol>
+            </p>
+        </article>
+        <article>
+            <h2>
+                Sistema
+            </h2>
+            <p>
+                Conjunto de uno o más ordenadores, periféricos, software, etc., que conforman un todo capaz de realizar el procesamiento y/o transferencia de información.
+            </p>
+        </article>
+        <article>
+            <h2>
+                Nivel
+            </h2>
+            <p>
+                Todo nivel está constituido por una entidad que agrupa unos servicios específicos para facilitar la comunicación (punto 3 del modelo).
+            </p>
+        </article>
+        <article>
+            <h2>
+                Función
+            </h2>
+            <p>
+                Entidad lógica que acepta entradas (argumentos) y produce salidas (valores, resultados) determinados por esa función.
+            </p>
+        </article>
+        <article>
+            <h2>
+                Proceso
+            </h2>
+            <p>
+                Elemento que procesa información para una aplicación determinada.
+                <br>
+                Proceso manual, físico, informático.
+            </p>
+        </article>
+        <article>
+            <h2>
+                Otros
+            </h2>
+            <ul>
+                <li>
+                    Entidades: Elementos activos que se encuentran en cada una de las capas.
+                </li>
+                <li>
+                    Puntos de Acceso al Servicio (SAP): Puntos en que cada capa encuentra los servicios de la inmediatamente inferior.
+                </li>
+                <li>
+                    Unidad de Datos de la Interfaz (IDU): Bloque de información que una capa pasa a la inmediatamente inferior.
+                </li>
+                <li>
+                    Unidad de Datos del Protocolo (PDU): Paquetes de información difíciles de enviar se fraccionan.
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>
+                Tipos de servicio
+            </h2>
+            <p>
+                <b>
+                Orientado a conexión: TCP.
+                </b>
+                El usuario establece inicialmente la conexión, intercambia información, termina y libera el circuito. Ej. Servicio telefónico.
+                <br>
+                <b>
+                Sin conexión: UDP. 
+                </b>
+                No es necesario establecer ningún circuito. El mensaje lleva información del destino y sigue una ruta. Puede llegar en distinto orden, necesitando una recolocación. O tiene que volver a enviarse.
+            </p>
+        </article>
+        <article>
+            <h2>
+                Funciones des cada nivel OSI
+            </h2>
+            <p>
+                Define cada nivel, pero no normaliza.
+                <br>
+                Agrupa funciones requeridas para comunicar sistemas y se estructuran jerárquicamente.
+                <br>
+                El nivel no tiene un único protocolo, define la función a realizar por varios protocolos.
+                <br>
+                Un protocolo se comunica con su homólogo al mismo nivel, por lo que solo le interesa la comunicación con él.
+                <br>
+                El nivel superior confía en el inferior para el envío de datos a través de la red y una vez en el físico comienza su ascensión.
+                <br>
+                No saber del resto de niveles, sólo cómo pasar los datos.
+            </p>
+            <h3>
+                Nivel 1 - Físico
+            </h3>
+            <p>
+                Medios mecánicos, electrónicos, funcionales para la transmisión de bits entre 2 entidades de enlace de datos.
+                <br>
+                Transmite bits por un canal de comunicación sin que se produzca alteraciones.
+                <ul>
+                    Normas a nivel:
+                    <li>
+                        X.24
+                    </li>
+                    <li>
+                        V.10    
+                    </li>
+                    <li>
+                        V.11
+                    </li>
+                    <li>
+                        V.24/V.28
+                    </li>
+                    <li>
+                        V.35
+                    </li>
+                    <li>
+                        ISO 2110
+                    </li>
+                    <li>
+                        EIA-232
+                    </li>
+                </ul>
+            </p>
+            <h3>
+                Nivel 2 - Enlace de datos
+            </h3>
+            <p>
+                Facilitar los medios funcionales y de procedimiento para establecer, mantener y liberar conexiones de enlace de datos entre entidades de red y transferir unidades de datos del servicio de enlace de datos.
+                <br>
+                Resuelve problemas de fiabilidad de los circuitos, agrupa datos formando tramas, bits de redundancia y control para corregir errores de transmisión.
+                <br>
+                <ul>
+                    Normas:
+                    <li>
+                        HDLC
+                    </li>
+                    <li>
+                    LAP-B
+                    </li>
+                    <li>
+                    IEE 802 (LAN)
+                    </li>
+                </ul>
+            </p>
+            <h3>
+                Nivel 3 - Red
+            </h3>
+            <p>
+                Proporciona los medios para establecer, mantener y liberar la conexión a través de una red donde existen muchos nodos.
+                <br>
+                Conmuta y encamina la información, intercambio de paquetes entre origen y destino, determinar la ruta más adecuada.
+                <br>
+                <ul>
+                    Normas:
+                    <li>
+                        X.25
+
+                    </li>
+                    <li>
+                        X.32
+                    </li>
+                    <li>
+                        X.3
+                    </li>
+                    <li>
+                        X.28
+                    </li>
+                    <li>
+                        X.29
+                    </li>
+                    <li>
+                        ISO 9542
+                    </li>                           
+                </ul>
+            </p>
+            <h3>
+                Nivel 4 - Transporte
+            </h3>
+            <p>
+                Transfiere datos entre entidades de sesión, liberándolas de esa función.
+                <br>
+                Optimiza los servicios de nivel de red y corrige las deficiencias en la calidad del servicio.
+                <br>
+                Segmentos
+                <br>
+                Calidad del servicio ofrecido por la red.
+                <br>
+                <ul>
+                    Normas:
+                    <li>
+                        X.214
+                    </li>
+                    <li>
+                        X.224
+                    </li>
+                </ul>
+            </p>
+            <h3>
+                Nivel 5 - Sesión
+            </h3>
+            <p>
+                Proporciona el medio necesario para que las entidades de presentación en cooperación organicen y sincronicen su diálogo y procedan al intercambio de datos.
+                <br>
+                Realiza un mapeo de la dirección de sesión hacia el usuario con las direcciones de transporte orientadas a la red y gestiona y sincroniza los datos intercambiados entre los usuarios de una sesión.
+               <br>
+               <ul>
+                Normas:
+                <li>
+                    X.215
+                </li>                    
+                <li>
+                    X.225
+                </li>
+            </ul>
+            </p>        
+            <h3>
+                Nivel 6 - Presentación
+            </h3>
+            <p>
+                Presenta la información que las entidades de aplicación le comunican en su comunicación. La información entregada sea entendida y utilizada.
+                <br>
+                Obtiene y libera la conexión de sesión cuando existan varias alternativas disponibles.
+                <br>
+                Datos.
+                <br>
+                <ul>
+                    Normas:
+                    <li>
+                        Videotex, Telefax, Teletex
+                    </li>
+                    <li>
+                        X.225
+                    </li>
+                </ul>
+            </p>
+            <h3>
+                Nivel 7 - Aplicación
+            </h3>
+            <p>
+                El nivel más alto por el que los procesos de aplicación acceden al entorno capas.
+                <br>
+                Proporciona los procedimientos precisos que permitan a los usuarios ejecutar comandos relativos a sus aplicaciones. Utiliza los servicios del nivel de presentación.
+                <br>
+                HTTP, FTP, SSH, SMTP,…
+                <br>
+                Datos.
+                <br>
+                <ul>
+                Nivel:
+                    <li>
+                        X.400                        
+                    </li>
+                    <li>
+                        X.500
+                    </li>
+                </ul>
+            </p>
+        </article>
+        <article>
+            <h2>
+                Arquitectura TCP/IP
+            </h2>
+            <p>
+                Se confunde con un protocolo de comunicaciones.
+                <br>
+                Es una arquitectura de red de apilado de protocolos por cajas.
+                <br>
+                Base de la comunicación de Internet.
+                <br>
+                Permite interconectar redes diferentes.
+                <br>
+                Tolerante a fallos.
+                <br>
+                Permita el uso de aplicaciones diferentes.
+                <br>
+                La información se fragmenta para seguir distintas rutas al destino (alternativas).
+                <br>
+                ARPANET -> militar, funcionando hasta 1990
+                <br>
+                MILNET
+                <br>
+                Independiente de los fabricantes y las marcas comerciales.
+                <br>
+                Interconecta redes de diferentes tecnologías y fabricantes.
+                <br>
+                Soporta múltiples tecnologías de redes.
+                <br>
+                Desde ordenadores pequeños a supercomputadores.
+                <br>
+                Estándar de comunicaciones en EEUU desde 1983.
+                <br>
+                “Pila de protocolos”.
+                <br>
+                <b>
+                Capa de subred: 
+                </b>
+                Existir algún protocolo que conecte la estación con la red. Depende de la tecnología.
+                <br>
+                <b>
+                Capa de interred:
+                </b>                
+                La más importante. Permiten que las estaciones envíen información (paquetes) a la red y los hagan viajar de forma independiente al destino. IP.
+                <br>
+                <b>
+                    Capa de transporte:
+                </b>
+                Establece una conversación entre el origen y el destino y comprobación de errores. TCP y UDP.
+                <br>
+                <b>
+                    Capa de aplicación: 
+                </b>
+                Protocolos de alto nivel que utilizan los programas para comunicarse. Telnet, FTP, HTTP, SMTP,…
+            </p>
         </article>
     </section>
 </body>
