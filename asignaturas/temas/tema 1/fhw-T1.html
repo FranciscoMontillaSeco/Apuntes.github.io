@@ -317,10 +317,8 @@
             </article>
             <article>
                 <h2>Unidad central de procesos (UCP)</h2>
-                <hr>
                 <p>
                     La Unidad Central de Proceso o Central Processing Unit (CPU) o procesador es el componente central del ordenador, encargado de procesar la información y de dirigir la actividad de todo el sistema informático
-                    <br>
                     Está formada por:
                     <ul>
                         <li>
@@ -344,8 +342,8 @@
                 <h3>La Unidad de Control (UC/CU)</h3> 
                 <p>
                     Se encarga de governar el ordenador, para ello recive e interpreta las instrucciónes que se van a ejecutar, normalmente esas instrucciónes se transforman en una serie de 
-                    microsinstrucciónes de bajo nivel, dependientes de la arquitectura del procesador <mark>La unidad de control dispondrá de una serie de circuitería necesaria para leer la dirección de memoria 
-                    de la siguiente instrucción a ejecutar, la localizará y la guardará en el registro de instrucción (IR)</mark>, a partir de aquí hay dos posibilidades de unidad de control:
+                    microsinstrucciónes de bajo nivel, dependientes de la arquitectura del procesador La unidad de control dispondrá de una serie de circuitería necesaria para leer la dirección de memoria 
+                    de la siguiente instrucción a ejecutar, la localizará y la guardará en el registro de instrucción (IR), a partir de aquí hay dos posibilidades de unidad de control:
                     <ul>
                         <li>
                             UC Microprogramada: Las instrucciónes están implementadas mediante una memoria de control que contiene microprogramas asociados a microinstrucciónes en las que se descomponen 
@@ -375,7 +373,6 @@
             </article>
             <article>
                 <h2>La ejecución de instrucciónes</h2>
-                <hr>
                 <p> 
                     Toda instrucción máquina residente en memoria principal pasa por una serie de fases que van desde su captura a su interpretación y ejecución, estas fases son:
                     <ol>
@@ -395,6 +392,52 @@
                             modificar el contenido del PC, dando lugar a bifurcaciónes.
                         </li>
                     </ol>
+                </p>
+            </article>
+            <!-- 02/11/23-->
+            <article>
+                <h2>
+                    Arquitectura del procesador
+                </h2>
+                <h3>
+                    Juego de instrucciones
+                </h3>
+                <p>
+                    La forma de representación de una instrucción para ser almacenada en memoria, se denomina formato de instrucción, dicho formato especifica el significado de cada uno de los bits que constituyen la instrucción denominandose longitud del formato al nº de bits que la compone, para sinplificar la intrucción se divide en una serie de campos(cadenas de bits contiguos) estando referido cada campo a un tipo de informacion en especifico hay dos tipos de informaciones :
+                    <ol>
+                        <li>
+                            La operación que hay que realizar (código de operacón)                
+                        </li>
+                        <li>
+                            Con que o con quien, recibe el nombre de especificación de los operandos
+                        </li>
+                    </ol>
+                    Las instrucciones máquina del ordenador disponen del código de operación que especifica la operación que realiza la instrucción, además la mayoría usan uno o varios campos donde se recojen los operandos, existen muchos tipos de intrucciones según el tipo de instrucción a realizar, cada instrucción se suele indentificar con un demotécnico(palabra corta) que hacer referencia a la orden que hace la función 
+                </p>
+                <h4>
+                    Criterio de longitud de palabra
+                </h4>
+                <p>
+                    Procurar que el nº de bits de la intrusción sea lo más corta posible, ya que cuanto más pequeña es ocupa menos espacio en memoria y en tiempo de ejecución sea más rápido.
+                    <br>
+                    La palabra de memoria tiene que ser igual o múltiplo que la longuitud de los registros. 
+                    <br>
+                    Que la longitud de la palabra de instrucción se fiaj o variable es otro criterio a decidir se tiende a que sean fijas.
+                    <br>
+                    Hay que dejar espacio suficiente para poder codificar todas las operaciones.
+                    <br>
+                    Se busca la independecia entre los módulos de direcciones y almacenamietno. Los códigos de operación son
+                    <br>
+                    <ul>
+                        Ejemplo de instrucciones de longitud variable
+                        <li>
+                            Es el típico caso en el que código de operación especifica el n1 de operandos, cuando más operandos tenga, más larga será la insturcción, primero se lee el código de instrucción y en función de este se va leyendo los operandos, es el ejemplo de la máquina VAX (casc), en este el código de operación tiene una longitud fia de 8 bits(2 <sup> 8</sup>= 512 ins) y una vez leido el cod operación se van asignando los operandos que suelen ocupar 8 bits, tiene una longitud de 8 bbits además hay 8 bits adiccionales por cada bando,
+                            Los formatos del VAX se caracterizan por tener instrucciones de longuitud variable siendo sin embargo su código de intruccion fija.
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
                 </p>
             </article>
         </section>

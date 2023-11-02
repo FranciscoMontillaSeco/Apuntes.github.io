@@ -1,10 +1,11 @@
-/*Barra de navegación*/
 /*https://www.hostinger.es/tutoriales/crear-un-menu-horizontal-simple-css*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-size: large;
+    background-color: rgb(190, 32, 64);
 }
-
+/* BARRA DE NAVEGACIóN */
 header {
     background-color: #333;
     padding: 9px;
@@ -35,7 +36,4 @@ nav a:hover {
     text-decoration: underline;
     color: rgb(168, 0, 0);
     background-color: rgb(153, 153, 153);
-}
-body{
-    background-color: crimson;
 }
