@@ -1,61 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/Estilo.css">
-    <title>ASIR 2023</title>
+    <title>
+        EJ-8
+    </title>
 </head>
-<header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">
-                    INICIO
-                </a>
-            </li>
-            <li>
-                <a href="asignaturas/gbd.html">
-                    GBD
-                </a>
-            </li>
-            <li>
-                <a href="asignaturas/par.html">
-                    PAR
-                </a>
-            </li>
-            <li>
-                <a href="asignaturas/lmsgi.html">
-                    LMSGI
-                </a>
-            </li>
-            <li>
-                <a href="asignaturas/fhw.html">
-                    FHW
-                </a>
-            </li>
-            <li>
-                <a href="asignaturas/iso.html">
-                    ISO
-                </a>
-            </li>
-            <li>
-                <a href="asignaturas/PRÁCTICAS/index-practicas.html">
-                    PRÁCTICAS
-                </a>
-            </li>
-        </ul>
-    </nav>    
-</header>
 <body>
-    <h1 class="index">
-        CURSO 2023/24
-    </h1>
-    <section>
+    <div>
         <article>
-    <h2>
+    <h1>
         HORARIO
-    </h2>
+    </h1>
     <table class="horario">
         <thead>
             <tr>
@@ -271,9 +228,42 @@
         </tbody>
     </table>
     </article>
-    </section>
+    <article>
+        <h2>
+            FORMULARIO
+        </h2>
+        <form action="procesar" method="post">
+            <p>
+                Rellene la siguiente información:
+            </p>
+            Nombre: <input type="text">
+            <br>
+            Comentarios:
+            <br>
+            <textarea name="rellenar" id="rellenar" cols="50" rows="5"></textarea>
+            <br>
+            Dirección de correo: <input type="email">
+            <br>
+            <br>
+            <b>
+                Aspectos favorables:
+            </b>
+            <br>
+            Diseño del sitio <input type="checkbox"  name="diseño" id="diseño"> Enlaces <input type="checkbox" name="enlaces" id="enlaces"> Facilidad de uso <input type="checkbox"  name="uso" id="uso"> Imágenes <input type="checkbox" name="ima" id="ima">
+            <br>
+            <br>
+            <b>
+                ¿Cómo llegaste a este sitio web?
+            </b>
+            <br>
+            Buscador <input type="radio"> Enlace desde otro sitio web <input type="radio" name="web" id="web"> Referencia en un libro <input type="radio"> Otro <input type="radio">
+            <br>
+            <br>
+            Valore el sitio web: <input type="number">
+            <br>
+                <input type="submit" value="Enviar"> <input type="reset">
+        </form>
+    </article>
+</div>
 </body>
-<footer>
-    
-</footer>
 </html>
