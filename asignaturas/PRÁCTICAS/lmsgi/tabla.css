@@ -5,4 +5,5 @@ th,td{
 table{
     border: 5px;
     border-style: outset;
+    text-align: center;
 }
