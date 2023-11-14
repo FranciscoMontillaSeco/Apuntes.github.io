@@ -50,14 +50,155 @@
     </nav>    
 </header> 
 <body>
+    <div>
+        <article>
+            <h2>
+                ÍNDICE DEL TEMA
+            </h2>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </article>
+    </div>
     <section>
             <h1>
                 MODELO ENTIDAD/RELACIÓN (ER)
             </h1>
         <article>
-            <h2>
-
+            <h2 id="1">
+                Estructura básica
             </h2>
+            <p>
+                La estructura básica del moderlo E/R es la tabla o relación. (pasar el modelo conceptual a tablas relacionadas) <br>
+            </p>
+            <h3>
+                Propiedades de las tablas/relaciones
+            </h3>
+            <p>
+                <ul>
+                    <li>
+                        Cada tabla tiene un nombre distinto.
+                    </li>
+                    <li>
+                        Cada atributo de la tabla toma un solo valor en cada tupla o fila.
+                    </li>
+                    <li>
+                        Cada atributo tiene un solo nombre.
+                    </li>
+                    <li>
+                        Cada tupla es única. No se repiten.
+                    </li>
+                    <li>
+                        El orden de los atributos no importa.
+                    </li>
+                    <li>
+                        El orden de las tuplas no importa.
+                    </li>
+                </ul>
+            </p>
+        </article>
+        <article>
+            <h2 >
+                Tipos de claves
+            </h2>
+            <ul>
+                <li>
+                    <b>
+                        Clave candidata :<br>
+                    </b>
+                    Conjunto de atributos que identifican unidicamente cada tupla de la relacción, es decir columnas cuyos valores no se repiten en ninguna fila de la tupla.
+                </li>
+                <li>
+                    <b>
+                        Clave primaria : <br>
+                    </b>
+                    Es la candidata que se coje como identificador de las tuplas, se elije la que mejor identifique a la tupla en la base de datos.
+                </li>
+                <li>
+                    <b>
+                        Clave alternativa : <br>
+                    </b>
+                    Cualquiera que no sea primaria.
+                </li>
+                <li>
+                    <b>
+                        Clave externa : <br>
+                    </b>
+                    Son los datos de atributos de una tabla cuyos valores están relacionados con atributos de otras tablas.
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>
+                Restrinciones
+            </h2>
+            <ul>
+                <li>
+                    <b>
+                        Inerentes : 
+                    </b>
+                    Son las restricciones que están siempre y no son determindas por el usuario sino por el hecho que la base de datos sea relacional. <br>
+                    Las más importante son: <br>
+                    <ul>
+                        <li>
+                            No puede haber dos tipos.
+                        </li>
+                        <li>
+                            El orden las tuplas no es importante.
+                        </li>
+                        <li>
+                            El orden de los atributos no importa.
+                        </li>
+                        <li>
+                            1 valor de atributo por tupla.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>
+                        Semánticas :
+                    </b>
+                    El modelo relacional permite a los usuarios incorporar restrinciones personales a los datos. 
+                    Acontinuaciín se definen las semánticas: 
+                    <ul>
+                        <li>
+                            <b>
+                                Primary Key / clave principal (PK) : <br>
+                            </b>
+                            Marca uno o más atributos como identificadores de la tabla, de esta forma las filas de las tablas no podrán repetir valores, ni dejarlos vacíos. Tienen por defecto <b>unique</b> y <b>Not null</b>
+                        </li>
+                        <br>
+                        <li>
+                            <b>
+                                Unicidad / Unique : <br>
+                            </b>
+                            Impide que se puedan repetir valores.
+                        </li>
+                        <br>
+                        <li>
+                            <b>
+                                Not Null :<br>
+                            </b>
+                            La obligatoriedad hace que el atributo marcado deba ser incluido, es decir no puede tener valor = nulo.
+                        </li>
+                        <br>
+                        <li>
+                            <b>
+                                Integridad referencial / foreign key :<br>
+                            </b>
+                            Sirve para indentificar una clave externa a la tabla, también llamada foranea, sobre uno o más atributos. Los atributos marcados de esta forma solo podran contener valores que estén relacionados con la pk de la tabla que relaciono, llamada tabla principal.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>
+                Paso de modelo E/R a relacional.
+            </h2>
+            
         </article>
     </section>
 </body>

@@ -52,178 +52,361 @@
 </header>
 <body>
     <div>
-        <h1>
-            HTML
-        </h1>
-        <h2>
-            P
-        </h2>
-        <!-- Elemento <p> -->
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae aliquam non natus aut id sint ea? Natus tempore hic reprehenderit temporibus minima nisi, quia, magnam omnis, officiis molestiae earum.
-        </p>
-        <h2>
-            HR
-        </h2>
-        <!-- Elemento <hr> -->
-        <hr>
-        <h2>
-            PRE
-        </h2>
-        <!-- Elemento <pre> -->
-        <pre>
-            Contenido preformateado       Conserva los espacios,
-                    los saltos de línea y los tabuladores del texto original.
-                </pre>
-        <h2>
-            BLOCKQUOTE
-        </h2>
-        <!-- Elemento <blockquote> -->
-        <blockquote>Con blockquote representamos un contenido citado desde otra fuente.</blockquote>
-        <h2>
-            LISTAS 
-        </h2>
-        <h3>
-            ORDENADAS
-        </h3>
-        <!-- Elemento <ol> -->
-        <ol>
-            <li>
-                Lista ordenada
-            </li>
-            <li>
-                Lista ordenada
-            </li>
-            <li>
-                Lista ordenada
-            </li>
-        </ol>
-        <h3>
-            DESORDENADAS
-        </h3>
-        <!-- Elemento <ul> -->
-        <ul>
-            <li>
-                Lista sin orden
-            </li>
-            <li>
-                Lista sin orden
-            </li>
-            <li>
-                Lista sin orden
-            </li>
-        </ul>
-        <h3>
-            DEFINICIÓN
-        </h3>
-        <!-- Elementos <dl> <dt> <dd>-->
-        <dl>
-            <dt>
-                Término 1
-            </dt>
-            <dd>
-                Definición del término 1.
-            </dd>
-            <dt>
-                Término 2
-            </dt>
-            <dd>
-                Definición del término 2.
-            </dd>
+        <article>
+            <ul>
+                <h2>
+                    ÍNDICE
+                </h2>
+                <li>
+                    <b><a href="../tema 1/lmsgi-T1.html#bvsi">Block vs Inline</a></b>
+                </li>
+                <li>
+                    <b><a href="../tema 1/lmsgi-T1.html#a">Enlaces</a></b>
+                </li>
+                <li>
+                    <b><a href="../tema 1/lmsgi-T1.html#listas">Listas</a></b>
+                </li>
+                <li>
+                    <b><a href="../tema 1/lmsgi-T1.html#tablas"> Tablas</a></b>
+                </li>
+            </ul>
+        </article>
+            <h1>
+                HTML
+            </h1>
+            <h2>
+                P
+            </h2>
+            <!-- Elemento <p> -->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae aliquam non natus aut id sint ea? Natus tempore hic reprehenderit temporibus minima nisi, quia, magnam omnis, officiis molestiae earum.
+            </p>
+            <h2>
+                HR
+            </h2>
+            <!-- Elemento <hr> -->
+            <hr>
+            <h2>
+                PRE
+            </h2>
+            <!-- Elemento <pre> -->
+            <pre>
+                Contenido preformateado       Conserva los espacios,
+                        los saltos de línea y los tabuladores del texto original.
+                    </pre>
+            <h2>
+                BLOCKQUOTE
+            </h2>
+            <!-- Elemento <blockquote> -->
+            <blockquote>Con blockquote representamos un contenido citado desde otra fuente.</blockquote>
+        </article>
+        <article>
+            <h2 id="bvsi">
+                Block vs Inline
+            </h2>
+            <ul>
+                <h3>
+                    Block
+                </h3>
+                <li>
+                    Rectángulo que ocupa todo lo disponible, dejando saltos de linea antes y después de la etiqueta.
+                </li>
+                <li>
+                    Si ponemos dos se ponen encima el uno del otro
+                </li>
+                <li>
+                    Ejemplos de etiquetas: <br>
+                    div, section, p, h1, header, body, footer, ...
+                </li>
+            </ul>
+            <ul>
+                <h3>
+                    Inline
+                </h3>
+                <li>
+                    Contenido  en una misma línea y sin saltos.
+                </li>
+                <li>
+                    Ejemplos de etiquetas: <br>
+                    strong, b, em, mark, sup, sub, ...
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2 id="a">
+                Enlaces
+            </h2>
+            <p>
+                Sintáxis básica : <b> <a href="" > Texto </a> </b>
+                <h3>
+                    Atributos de a
+                </h3>
+                <ul>
+                    <li>
+                        <h4>
+                            target=" "
+                        </h4>
+                    </li>
+                    <ul>
+                        Atributos de target
+                        <li>
+                            <b>_blank</b>: Abre en una ventana nueva
+                        </li>
+                        <li>
+                            <b>_self</b>: Lo abre en la misma ventana, es la opción por defecto
+                        </li>
+                        <li>
+                            <b>_parent</b>: Lo abre en el frame parent
+                        </li>
+                        <li>
+                            <b>_top</b>: Lo abre en ventana completa
+                        </li>
+                        <li>
+                            <b>framename</b>: Lo abre en un frame específico.
+                        </li>
+                    </ul>
+                </ul>
+            </p>
+        </article>
+        <article>
+            <h2 id="listas">
+                LISTAS 
+            </h2>
+            <h3>
+                ORDENADAS
+            </h3>
+            <!-- Elemento <ol> -->
+            <ol>
+                <li>
+                    Lista ordenada
+                </li>
+                <li>
+                    Lista ordenada
+                </li>
+                <li>
+                    Lista ordenada
+                </li>
+            </ol>
+            <h3>
+                DESORDENADAS
+            </h3>
+            <!-- Elemento <ul> -->
+            <ul>
+                <li>
+                    Lista sin orden
+                </li>
+                <li>
+                    Lista sin orden
+                </li>
+                <li>
+                    Lista sin orden
+                </li>
+            </ul>
+            <h3>
+                DEFINICIÓN
+            </h3>
+            <!-- Elementos <dl> <dt> <dd>-->
+            <dl>
+                <dt>
+                    Término 1
+                </dt>
+                <dd>
+                    Definición del término 1.
+                </dd>
+                <dt>
+                    Término 2
+                </dt>
+                <dd>
+                    Definición del término 2.
+                </dd>
 
-            <dt>
-                Término 3
-            </dt>
-            <dd>
-                Definición del término 3.
-            </dd>
-        </dl>
-        <h3>
-            Atributos listas 
-        </h3>
-        <p>
-        <h4>
-            Atributo «type» (para listas ordenadas): 
-        </h4>
-            «1»: Numeración decimal (1, 2, 3, …).<br>
-            «A»: Letras mayúsculas (A, B, C, …).<br>
-            «a»: Letras minúsculas (a, b, c, …).<br>
-            «I»: Números romanos mayúsculos (I, II, III, …).<br>
-            «i»: Números romanos minúsculos (i, ii, iii, …).<br>
-        <h4>
-            Atributo «type» (para listas no ordenadas):
-        </h4>
-            «disc»: Puntos sólidos (●, ●, ●, …).<br>
-            «circle»: Círculos (○, ○, ○, …).<br>
-            «square»: Cuadrados (■, ■, ■, …).<br>
-        <h4>
-            Atributo «start» (solo para listas ordenadas):
-        </h4>
-             Establece el valor inicial de la numeración de la lista.
-        <h4>
-            Atributo «reversed» (solo para listas ordenadas):
-        </h4>
-             Invierte el orden de numeración de la lista. <br>
-        <h4>
-            EJEMPLO
-        </h4>
-        <h5>
-            Lista ordenada 1:
-        </h5>
-        <ol type="A" start="3">
-          <li>
-            Elemento 1
-        </li>
-          <li>
-            Elemento 2
-        </li>
-          <li>
-            Elemento 3
-        </li>
-        </ol>
-        <h3>
-            Lista ordenada 2:
-        </h3>
-        <ol type="1" reversed>
-          <li>
-            Elemento 1
-        </li>
-          <li>
-            Elemento 2
-        </li>
-          <li>
-            Elemento 3
-        </li>
-        </ol>
-        
-        <h3>
-            Lista no ordenada 3:
-        </h3>
-        <ul type="square">
-          <li>
-            Elemento 1
-        </li>
-          <li>
-            Elemento 2
-        </li>
-          <li>
-            Elemento 3
-        </li>
-        </ul>
-        </p>
-        <!-- Elementos <figure> y <figurecaption>-->
-        <figure>
-        <img src="https://www.eniun.com/wp-content/uploads/eniun-icon-user-experience.svg"
-            alt="Usabilidad">
-        <figcaption>
-            Figura 1
-        </figcaption>
-        </figure>
-
+                <dt>
+                    Término 3
+                </dt>
+                <dd>
+                    Definición del término 3.
+                </dd>
+            </dl>
+            <h3>
+                Atributos listas 
+            </h3>
+            <p>
+            <h4>
+                Atributo «type» (para listas ordenadas): 
+            </h4>
+                «1»: Numeración decimal (1, 2, 3, …).<br>
+                «A»: Letras mayúsculas (A, B, C, …).<br>
+                «a»: Letras minúsculas (a, b, c, …).<br>
+                «I»: Números romanos mayúsculos (I, II, III, …).<br>
+                «i»: Números romanos minúsculos (i, ii, iii, …).<br>
+            <h4>
+                Atributo «type» (para listas no ordenadas):
+            </h4>
+                «disc»: Puntos sólidos (●, ●, ●, …).<br>
+                «circle»: Círculos (○, ○, ○, …).<br>
+                «square»: Cuadrados (■, ■, ■, …).<br>
+            <h4>
+                Atributo «start» (solo para listas ordenadas):
+            </h4>
+                Establece el valor inicial de la numeración de la lista.
+            <h4>
+                Atributo «reversed» (solo para listas ordenadas):
+            </h4>
+                Invierte el orden de numeración de la lista. <br>
+        </article>     
         <!-- Elemento <div>-->
         <div>
             Contenedor tipo div
         </div> 
+        <h2 id="tablas">
+            Tablas
+        </h2>
+        <p>
+            Las tablas están formadas por:
+            <ul>
+                <li>
+                    Todo va dentro de la etiqueta <b>table</b>
+                </li>
+                <li>
+                    Filas = tr
+                </li>
+                <li>
+                    Las celdas con el contenido = td 
+                </li>
+            </ul>
+            <h3>
+                Tiene etiquetas para la estructura de la tabla
+            </h3>
+            <ul>
+                <li>
+                    Con <b>caption</b> le ponemos nombre a la tabla
+                </li>
+                <li>
+                    Con <b>thead</b> especificamos la cabecera de la tabla aquí en vez de <b>td</b> tenemos que colocar <b>th</b>
+                </li>
+                <li>
+                    Con <b>tbody</b> especificamos que es el cuepro con el contenido principal de esta.
+                </li>
+                <li>
+                    Con <b>tfoot</b> indicamos que es el pie de la tabla, se usa para los resultados de esta o para poner notas al pie de esta.
+                </li>
+            </ul>
+            <h3>
+                EJEMPLO DE TABLA
+            </h3>
+            <table border="1">
+                <caption>Título de la tabla</caption>
+                <thead>
+                    <tr>
+                        <th>
+                            Cabecera 1
+                        </th>
+                        <th>
+                            Cabecera 2
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Fila 1, columna 1
+                        </td>
+                        <td>
+                            Fila 1, columna 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Fila 2, Columna 1
+                        </td>
+                        <td>
+                            Fila 2, columna 2
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+            <h3>
+                ATRIBUTOS DE LA TABLA
+            </h3>
+            <ul>
+                <li>
+                    <h4>
+                        Atributos table
+                    </h4>
+                    <ul>
+                        <li>
+                            <b>width</b>: Anchura de la tabla
+                        </li>
+                        <li>
+                            <b>borde</b>: Anchura de los bordes de la tabla
+                        </li>
+                        <li>
+                            <b>cellspacing</b>: Espacio entre las celdas
+                        </li>
+                        <li>
+                            <b>cellpadding</b>: Espacio entre borde de la celda y el contenido de esta.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>
+                        Atributos de tr
+                    </h4>
+                    <ul>
+                        <li>
+                            <b>align</b>: Alineacion del contenido de las celdas de la fila
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>
+                        Atributos de th y td 
+                    </h4>
+                    <ul>
+                        <li>
+                            <b>rowspan</b>: Nº de filas que ocupará la celda
+                        </li>
+                        <li>
+                            <b>colspan</b>: Nº de columnas de la fila
+                        </li>
+                        <li>
+                            <b>align</b>: Alineación del contenido de la celda
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
     </div>
+    <table>
+        <caption>
+            Tabla ejemplo
+        </caption>
+        <thead>
+            <tr>
+                <th>
+                    Titulo 1
+                </th>
+                <th>
+                    Titulo 2
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    Fila 1, 2, columna 1
+                </td>
+                <td rowspan="2">
+                    Fila 1, 2, columna 3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fila 2
+                </td>
+                <td>
+                    Fila 2
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
