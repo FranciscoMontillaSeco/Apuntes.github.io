@@ -57,7 +57,43 @@
             </h2>
             <ul>
                 <li>
-
+                    <ul>
+                    <a href="./gbd-T4.html#1">
+                        Estructura básica
+                    </a>
+                        <li>
+                            <a href="./gbd-T4.html#2">
+                            Propiedades de las tablas/relaciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./gbd-T4.html#3">
+                                Tipos de claves
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./gbd-T4.html#4">
+                                Restrinciones 
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./gbd-T4.html#5">
+                        Paso al modelo relacional
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="./gbd-T4.html#6">
+                                Transformación de entidades fuertes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./gbd-T4.html#7">
+                                Transformación de las relaciones
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </article>
@@ -68,13 +104,13 @@
             </h1>
         <article>
             <h2 id="1">
-                Estructura básica
+                ESTRUCTURA BÁSICA
             </h2>
             <p>
                 La estructura básica del moderlo E/R es la tabla o relación. (pasar el modelo conceptual a tablas relacionadas) <br>
             </p>
-            <h3>
-                Propiedades de las tablas/relaciones
+            <h3 id="2">
+                PROPIEDADES DE LAS TABLAS/RELACIONES
             </h3>
             <p>
                 <ul>
@@ -98,10 +134,13 @@
                     </li>
                 </ul>
             </p>
+            <b><a href="./gbd-T4.html#1">
+                Volver al índice
+            </a></b>
         </article>
         <article>
-            <h2 >
-                Tipos de claves
+            <h2 id="3">
+                TIPOS DE CLAVES
             </h2>
             <ul>
                 <li>
@@ -129,10 +168,13 @@
                     Son los datos de atributos de una tabla cuyos valores están relacionados con atributos de otras tablas.
                 </li>
             </ul>
+            <b><a href="./gbd-T4.html#1">
+                Volver al índice
+            </a></b>
         </article>
         <article>
-            <h2>
-                Restrinciones
+            <h2 id="4">
+                RESTRINCIONES
             </h2>
             <ul>
                 <li>
@@ -193,12 +235,75 @@
                     </ul>
                 </li>
             </ul>
+            <b><a href="./gbd-T4.html#1">
+                Volver al índice
+            </a></b>
         </article>
         <article>
-            <h2>
-                Paso de modelo E/R a relacional.
+            <h2 id="5">
+                PASO DEL MODELO E/R AL RELACIONAL
             </h2>
-            
+                <p>
+                    La regla básica es que las entidades se van a transformar en tablas, y las relaciones crerán o no un a tabla dependiendo de su cardinalidad.
+
+                </p>
+            <h3 id="6">
+                TRANSFORMACIÓN DE LAS ENTIDADES FUERTES
+            </h3>
+            <p>
+                En principo las entidades fuertes del modelo E/R son trasnformadas al relacional siguiendo estas instrucciones :
+            <ul>
+                <li>
+                    Las entidades pasan a ser tablas.
+                </li>
+                <li>
+                    Los atributos pasan a ser columnas de la tabla.
+                </li>
+                <li>
+                    Los indietificadores clave de la entidad pasan a ser claves primarias.
+                </li>
+            </ul>
+            </p>
+            <b><a href="./gbd-T4.html#1">
+                Volver al índice
+            </a></b>
+            <h3 id="7">
+                TRANSFORMACIÓN DE LAS RELACIONES
+            </h3>
+            <p>
+                <ul>
+                    <li>
+                       <ul>
+                        <h4>
+                            VARIOS A VARIOS
+                        </h4>
+                            <li>
+                                En las relaciones varios a varios (tienen n en los dos lados de la relación).
+                            </li>
+                            <li>
+                                la relación se transforma en una tabla cuyos atributos son : los atributos de la relacción y las claves de las entidades relacionadas(pasan a ser foraneas)
+                            </li>
+                            <li>
+                                La clave de la tabla de la relación serán todas las claves foraneas de las tablas que se relacionan.
+                            </li>
+                       </ul>
+                    </li>
+                    <li>
+                        <ul>
+                        <h4>
+                            TERNARIAS, CURTERNARIAS, etc
+                        </h4>                        
+                            <li>
+                                En las relaciones enarias que unen más de dos entidades se transforman en una tabla que contiene los atributos de la relación <b>+</b> los identificadores de las dos entidades relacionadas.
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </p>
+            <b><a href="./gbd-T4.html#1">
+                Volver al índice
+            </a></b>
         </article>
     </section>
 </body>

@@ -1,20 +1,20 @@
 /*Barra de navegación*/
 /*https://www.hostinger.es/tutoriales/crear-un-menu-horizontal-simple-css*/
 body {
-    margin: 0;
+    margin: 5%;
     font-family: Arial, sans-serif;
     background-color: rgba(33, 207, 33, 0.959);
 }
-
 header {
     background-color: #333;
-    padding: 9px;
+    padding: 2%;
+    margin-left: -10;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: -1;
 }
 
 nav li {

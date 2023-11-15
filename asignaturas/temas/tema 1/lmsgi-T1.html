@@ -54,7 +54,7 @@
     <div>
         <article>
             <ul>
-                <h2>
+                <h2 id="indice">
                     ÍNDICE
                 </h2>
                 <li>
@@ -69,7 +69,13 @@
                 <li>
                     <b><a href="../tema 1/lmsgi-T1.html#tablas"> Tablas</a></b>
                 </li>
+                <li>
+                    <b><a href="../tema 1/lmsgi-T1.html#formato">Formatos</a></b>
+                </li>
             </ul>
+            <b>
+                <a href="../tema 1/lmsgi-T1.html#idice">Volver al indice</a>
+            </b>
         </article>
             <h1>
                 HTML
@@ -99,6 +105,9 @@
             </h2>
             <!-- Elemento <blockquote> -->
             <blockquote>Con blockquote representamos un contenido citado desde otra fuente.</blockquote>
+            <b>
+                <a href="../tema 1/lmsgi-T1.html#idice">Volver al indice</a>
+            </b>
         </article>
         <article>
             <h2 id="bvsi">
@@ -132,6 +141,9 @@
                 </li>
             </ul>
         </article>
+        <b>
+            <a href="../tema 1/lmsgi-T1.html#idice">Volver al indice</a>
+        </b>
         <article>
             <h2 id="a">
                 Enlaces
@@ -166,8 +178,14 @@
                         </li>
                     </ul>
                 </ul>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">
+                    Página con etiquetas
+                </a>
             </p>
         </article>
+        <b>
+            <a href="../tema 1/lmsgi-T1.html#idice">Volver al indice</a>
+        </b>
         <article>
             <h2 id="listas">
                 LISTAS 
@@ -258,6 +276,9 @@
         <div>
             Contenedor tipo div
         </div> 
+        <b>
+            <a href="../tema 1/lmsgi-T1.html#idice">Volver al indice</a>
+        </b>
         <h2 id="tablas">
             Tablas
         </h2>
@@ -375,9 +396,13 @@
             </ul>
         </p>
     </div>
-    <table>
+    <table border="1" >
         <caption>
-            Tabla ejemplo
+            <h1>
+            Titulo de la tabla
+
+            </h1>
+            Titulo de la tabla
         </caption>
         <thead>
             <tr>
@@ -392,21 +417,221 @@
         <tbody>
             <tr>
                 <td colspan="2">
-                    Fila 1, 2, columna 1
+                    colspan
                 </td>
-                <td rowspan="2">
-                    Fila 1, 2, columna 3
+                <td>
+                    3
                 </td>
             </tr>
             <tr>
                 <td>
                     Fila 2
                 </td>
+                <td rowspan="2">
+                    rowspan
+                </td>
                 <td>
-                    Fila 2
+                    columna 3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fila 3
+                </td>
+                <td>
+                    coulumna 3
                 </td>
             </tr>
         </tbody>
     </table>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrcs_wagWxykLZBFLjXkoBgSiqGjKVpl9YOD3HPyCNe6j1uBPND2MEwKivogxMd2DeI48&usqp=CAU" alt="">
+    <img src="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fmuxh7y6qsdea1.jpg" alt="texto de ejmplo por si no se muestra la imagen">
+    <a href=""></a>
+    <br>
+    <b></b>
+    <mark>
+    Lorem ipsum dolor sit amet
+    <br> consectetur adipisicing elit. Repudiandae odio possimus eos off <br> icia deserunt enim nesciunt amet eveniet nostrum, quasi magnam minus ducimus dolore, voluptatem atque distinctio maiores illo aliquid.
+    </mark> <BR></BR>
+    <s>SUBRAYYADO</s>
+    <sub>sub 2</sub> 
+    <br>
+    <sup> sup 5</sup>
+    <em>sdsa</em>
+    <br>
+    <b>
+        <a href="../tema 1/lmsgi-T1.html#idice">Volver al indice</a>
+    </b>
+    <article id="formato">
+        <h2>
+            FORMATOS
+        </h2>
+            <p>
+                Texto normal <strong>Texto fuerte</strong> <em>Enfasis</em>  vuelo a ser texto normal
+            </p>
+            <p>
+                texto normal <mark>texto remarcado</mark>
+            </p>
+            <p>
+                H <sub>2</sub> O
+            </p>
+            <p>
+                x <sup>2</sup> = 5
+            </p>
+            <p>
+                Letra normal <small>letra pequeña</small>
+            </p>
+            <h4>Etiquetas de citas</h4>
+            <p>Julio César dijo <q>Alea Jacta est!</q></p>
+            <p>Miguel de Cervantes escribió <cite>Don Quijote</cite></p>
+            <blockquote>
+                Por diez cañones por banda <br>
+                Viento en popa a toda vela... <br><br>
+                Por diez cañones por banda <br>
+                Viento en popa a toda vela... <br>
+            </blockquote>
+            <p>
+                Oferta: <del>20€</del><strong>15 €</strong>
+            </p>
+            <p>
+                <strong>Oferta: <del>20€</del><u>15 €</u></strong>
+            </p>
+            <p>No me funciona el <em>chipset</em> de la placa</p>
+            <p>ver directorios dir *.* Ejemplo de resultado con formato tal y como sale del ordenador</p>
+            <pre><code>     
+                    17/05/2022	18:09				45.187.544	Moodle
+                    18/08/2022	18:09				87.544	    foto
+                    17/05/2022	18:09				544	        Moodle
+                    18/08/2022	18:09				&lt;dir&gt;	foto
+                    17/05/2022	18:09				&lt;dir&gt;	Moodle
+                    18/08/2022	18:09				&lt;dir&gt;	foto
+                </code>
+            </pre>
+            <p><strong>un p con br</strong></p>
+            <p>
+                En Notepadd++ si pulso las teclas ctrl+A me permite seleccionar todo el texto <br>
+                En Notepadd++ si pulso las teclas ctrl+F me permite buscar <br><br>
+            </p>
+            <p><strong>con dos p</strong></p>
+            <p>En Notepadd++ si pulso las teclas ctrl+A me permite seleccionar todo el texto</p>
+            <p>En Notepadd++ si pulso las teclas ctrl+F me permite buscar</p>
+            <p>texto normal <span style="color: red;">span</span></p>
+        
+            <br><br><br>
+            <p>Ej 2</p>
+            <h1>Fuentes</h1>
+            <hr>
+            <p>5 &gt; 3</p>
+            <p>&amp;&amp;&amp;</p>
+            <p>&quot; Doble comilla &quot; </p>
+            <p>Comillas simple o apostrofe &apos;</p>
+            <h1>Citas</h1>
+            <p>Julio César dijo <q>Alea Jacta est!</q></p>
+            <p>Bad Bunny compuso <cite>Ojitos lindos</cite></p>
+            <blockquote>
+                Y solo mírame <br>
+                Con esos ojito&apos; lindo&apos; <br>
+                Que, con eso, yo estoy bien Hoy he vuelto a nacer
+            </blockquote>
+            <h1>Abreviaturas:</h1>
+            <abbr title="Centro Nacional de Inteligencia" style="text-decoration: none;">CNI</abbr>
+            <ol>
+                <li>
+                    &lt; strong &gt; : <strong>Este es un texto en negrita</strong>
+                </li>
+                <li>
+                    b: <b>Esto es otro texto en negrita aunque esta etiqueta ya no se suele utilizar</b>
+                </li>
+                <li>
+                    em: <em>esto es un texto en cursiva</em>
+                </li>
+                <li>
+                    i : <i><strong>esto es un texto en cursiva con la eitqueta:</strong> antigua i</i>
+                </li>
+                <li>
+                    mark: <mark>Texto</mark> subrayado en <mark>en amarillo</mark>
+                </li>
+                <li>
+                    sub: Subindice <br>
+                    Esto es un texto <sub>1</sub>
+                </li>
+                <li>
+                    sup: Superindice <br>
+                    Esto es un texto <sup>1</sup>
+                </li>
+                <li>
+                    small Esto es un texto con <small>letras pequeñas</small>
+                </li>
+            </ol>
+            <pre>
+                <code>
+                 
+                        $(document).ready(function(){
+                            Console.log(“**********************************”);
+                             
+                        });																xfhdhfdh
+                
+                </code>
+            </pre>
+            <h1>Simbolos griegos</h1>
+            &alpha; <br>
+            &Gamma; <br>
+            &Delta; <br>
+            &Beta;
+            <h1>Simbolos mat</h1>
+            &equiv; <br>
+            &ne;
+            <h1>Sistemas Operativos</h1>
+            <p></p>
+            <dl>
+                <dt>Windows</dt>
+                <dd>
+                    Es un SO de Microsoft
+                </dd>
+                <dt>Linux</dt>
+                <dd>
+                    Es un SO de código abierto
+                </dd>
+            </dl>
+            <br>
+            <footer><em>Este texto ha sido escrito por Francisco Montilla Seco</em></footer>
+    </article>
+    <!-- 
+    <p>
+
+    </p>
+    <h1>
+
+    </h1>
+    <head>
+        meta 
+    </head>
+    <body>
+        <header>
+            <nav>
+                y sus links 
+            </nav>
+        </header>
+        <aside>
+            <blockquote> </blockquote>
+        </aside>
+        <div>
+            <span>
+
+            </span>
+            <span>
+
+            </span>
+        </div>
+        <div>
+            <span>
+
+            </span>
+        </div>
+        <footer>
+
+        </footer>
+    </body>
+     -->
 </body>
 </html>
