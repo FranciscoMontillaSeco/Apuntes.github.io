@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Formulario inscripción
+    </title>
+</head>
+<body>
+    <form action="registro" method="post">
+        <table border="1" align="center">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <h1>
+                            Registro de asistentes a las Jornadas de seguridad
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <img src="Imágenes incluidas/cartel.jpg" alt="">
+                    </td>
+                    <td>
+                        <label for="dni/nif">
+                            DNI/NIF *:
+                        </label>
+                        <input type="text" id="dni/nif" name="dni/nif" pattern="[A-Z]{0,1}[1-9]{8}[A-Z]{1}" placeholder="DNI/NIF">
+                        <br>
+                        <label for="nombre">
+                            Nombre *:
+                        </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <br>
+                        <label for="apellidos">
+                            Apellidos *:
+                        </label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellidos">
+                        <br>
+                        <label for="correo">
+                            E-Mail *:
+                        </label>
+                        <input type="email" placeholder="E-mail">
+                        <br>
+                        <label for="fecha">
+                            Nacimiento *:
+                        </label>
+                        <input type="date" id="fecha" name="fecha">
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+                        <label for="ciudad">
+                            Ciudad de procedencia 
+                        </label>
+                        <select name="ciudad" id="ciudad">
+                            <optgroup>
+                                <option value="">
+                                    Palencia
+                                </option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <br>
+                        <fieldset>
+                            <legend>
+                                Institución de origen
+                            </legend>
+                            <label for="ni">
+                                Nombre de la institución *:
+                            </label>
+                            <input type="text" placeholder="Institución">
+                            <label for="dire">
+                                Dirección de la institución *:
+                            </label>
+                            <input type="text" placeholder="Calle - Número - CP - Provincia">
+                                <fieldset>
+                                    <legend>
+                                        Tipo de Institución*
+                                    </legend>
+                                    <input type="radio" name="ce" id="ce">
+                                    <label for="ce">
+                                        Centro educativo
+                                    </label>
+                                    <br>
+                                    <input type="radio" name="ip" id="ip">                 
+                                    <label for="ip">
+                                        Institución pública 
+                                    </label>           
+                                    <br>   
+                                    <input type="radio" name="ep" id="ep">
+                                    <label for="ep">
+                                        Empresa privada
+                                    </label>
+                                    <br>
+                                    <input type="radio" name="o" id="o">
+                                    <label for="o">
+                                        Otros / Independiente
+                                    </label>
+                                </fieldset>
+                        </fieldset>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

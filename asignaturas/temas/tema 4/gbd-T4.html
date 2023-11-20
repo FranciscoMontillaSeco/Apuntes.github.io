@@ -291,14 +291,66 @@
                     <li>
                         <ul>
                         <h4>
-                            TERNARIAS, CURTERNARIAS, etc
+                            Relaciones de orden n (n-arias):                            
                         </h4>                        
                             <li>
-                                En las relaciones enarias que unen más de dos entidades se transforman en una tabla que contiene los atributos de la relación <b>+</b> los identificadores de las dos entidades relacionadas.
+                                En las relaciones ternarias, n-arias que unen más de dos entidades se transforman en una tabla que contiene los atributos de la relacion mas los identificadores de las entidades relacionadas.
                             </li>
                         </ul>
                     </li>
-
+                    <li>
+                        <ul>
+                            <h4>
+                                Relaciones 1 a vairos (1 a n):
+                            </h4>
+                            <li>
+                                Las relaciones binarias de tipo 1 a varios no requieren ser transformadas en una tabla del modelo relacional, en su lugar, la tabla del lado varios incluye como clave externa el identificador de la entidad del lado 1
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <h4>
+                                Relaciones 1 a 1:
+                            </h4>
+                            <li>
+                                En estas relaciones solo se crea una tabla, absorviendo una entidad a la otra.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <h4>
+                                Transformación de entidades débiles
+                            </h4>
+                            <li>
+                                Toda entidad débil incorpora una relación implicita con una relación fuerte, esta relación implicita no necesita incorporarse como tabla en el modelo relacional al tratarse de una relación n a 1, bastará por lo tanto con añadir como atributo y clave foranea en la entidad débil el identificador de la entidad fuerte.
+                            </li>
+                            <li>
+                                En ocasiones el Id de la entidad débil será un simple discriminador.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <h4>
+                                Transformación de relaciones ISA
+                            </h4>
+                                En el caso de las relaciones ISA se siguen estas normas:
+                            <li>
+                                anto las superentidades como las subentidades pueden generar tablas en el modelo relacional.
+                            </li>
+                            <li>
+                                Los atributos se colocan en la tabla a la que se refiere cada entidad.
+                            </li>
+                            <li>
+                                Si las subentidades no tienen clave propia se colocará como clave la clave de su superentidad, esta clave heredada será clave secudnaria además de clave principal.
+                            </li>
+                            <li>
+                                En el caso de que las subentidades tengan clave propia se colocará en las subentidades el identificador de la superentidad como clave secundaria.
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </p>
             <b><a href="./gbd-T4.html#1">

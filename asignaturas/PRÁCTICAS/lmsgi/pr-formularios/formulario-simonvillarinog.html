@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Formulario
+    </title>
+</head>
+<body>
+    <div>
+        <span>
+            <h1>
+                Formularios de inscripcion
+            </h1>
+            <form action="">
+                <label for="id">
+                    <b>ID</b>
+                </label>
+                <input type="text" name="id" id="id" placeholder="0001A" readonly>
+                <label for="tr">
+                    Trabajador
+                </label>
+                <input type="text" name="tr" id="tr" placeholder="Sr. Angel" readonly>
+                <br>
+                <br>
+                <label for="nombre">
+                    Nombre 
+                </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe entre 5 y 40 caracteres" pattern="[A-Z-a-z]{5,40}">
+                <label for="dni">
+                    DNI
+                </label>
+                <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]{1}" title="Utiliza un formato que conincida con el solicitado 8 números + 1 letra">
+                
+                <label for="mt">
+                    Matrícula
+                </label>
+                <input type="text" name="mt" id="mt" pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}" placeholder="introduce matrícula" title="Utiliza un fortmato que conincida con el solicitado Ejemplo: PA-1234-WA">
+                <br>
+                <label for="pdw">
+                    Contraseña
+                </label>
+                <input type="password" name="pdw" id="pdw"><br>
+                <input type="number" name="n" id="n">
+                <label for="n">
+                    Número
+                </label>
+                <br>
+                <p>
+                    Fichero a subir
+                </p>
+                <br>
+                <input type="file" accept="img" name="ai" id="ai">
+                <input type="file" accept="" name="iw" id="iw">
+                <fieldset>
+                    <legend>
+                        introduce la fecha y hora actual
+                    </legend>
+                    <input type="date" name="f" id="f">
+                    <input type="time" name="h" id="h" value="19:00">
+                    <br>
+                    <br>
+                    <label for="ci">
+                        Seleccione su provincia:
+                    </label>
+                    <select name="ci" id="ci">
+                        <optgroup label="Castilla y León">
+                            <option value="Castilla y León">
+                                Palencia
+                            </option>
+                            <option value="Castilla y León">
+                                León
+                            </option>
+                            <option value="Castilla y León">
+                                Burgos
+                            </option>
+                            <option value="Castilla y León">
+                                Segovia
+                            </option>
+                            <option value="Castilla y León">
+                                Valladolid
+                            </option>
+                        </optgroup>
+                        <optgroup label="Cantabria">
+                            <option value="Cantabria">
+                                Santander
+                            </option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="af">
+                    Aficciones
+                </label>
+                <select name="" id="">
+                    <optgroup label="Fútbol">
+                        <option value="Fútbol">
+                            Deporte
+                        </option>
+                    </optgroup>
+                    <optgroup label="Lectura">
+                        <option value="Lectura">
+                            Fisico
+                        </option>
+                    </optgroup>
+                    <optgroup label="Netflix">
+                        <option value="Netflix">
+                            Televisón
+                        </option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <label for="dd">
+                    Describe el disco duro:
+                </label>
+                <br>
+                <textarea name="dd" id="dd" cols="30" rows="10">
+                </textarea>
+                <br>
+                <br>
+                <input type = "submit" value = "Enviar">
+                <input type = "reset" value = "Limpiar">
+            </form>
+        </span>
+    </div>
+</h1>
+</body>
+</html>
