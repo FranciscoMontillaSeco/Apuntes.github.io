@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -9,6 +9,7 @@
     </title>
 </head>
 <header>
+<!-- NAV                                        -->    
     <nav>
         <ul>
             <li>
@@ -51,46 +52,54 @@
 </header> 
 <body>
     <div>
+
+<!-- ÍNDICE                                     -->
+
         <article>
-            <h2>
+            <h2 id="1">
                 ÍNDICE DEL TEMA
             </h2>
             <ul>
                 <li>
                     <ul>
-                    <a href="./gbd-T4.html#1">
+                    <a href="./gbd-T4.html#2">
                         Estructura básica
                     </a>
                         <li>
-                            <a href="./gbd-T4.html#2">
+                            <a href="./gbd-T4.html#3">
                             Propiedades de las tablas/relaciones
                             </a>
                         </li>
                         <li>
-                            <a href="./gbd-T4.html#3">
+                            <a href="./gbd-T4.html#4">
                                 Tipos de claves
                             </a>
                         </li>
                         <li>
-                            <a href="./gbd-T4.html#4">
+                            <a href="./gbd-T4.html#5">
                                 Restrinciones 
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="./gbd-T4.html#5">
+                    <a href="./gbd-T4.html#6">
                         Paso al modelo relacional
                     </a>
                     <ul>
                         <li>
-                            <a href="./gbd-T4.html#6">
+                            <a href="./gbd-T4.html#7">
                                 Transformación de entidades fuertes
                             </a>
                         </li>
                         <li>
-                            <a href="./gbd-T4.html#7">
+                            <a href="./gbd-T4.html#8">
                                 Transformación de las relaciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./gbd-T4.html#9">
+                                Representación de esquemas de BDs
                             </a>
                         </li>
                     </ul>
@@ -102,14 +111,17 @@
             <h1>
                 MODELO ENTIDAD/RELACIÓN (ER)
             </h1>
+
+<!-- PUNTO 2, 3 - ESTRUCTURA BÁSICA             -->
+
         <article>
-            <h2 id="1">
+            <h2 id="2">
                 ESTRUCTURA BÁSICA
             </h2>
             <p>
                 La estructura básica del moderlo E/R es la tabla o relación. (pasar el modelo conceptual a tablas relacionadas) <br>
             </p>
-            <h3 id="2">
+            <h3 id="3">
                 PROPIEDADES DE LAS TABLAS/RELACIONES
             </h3>
             <p>
@@ -138,8 +150,11 @@
                 Volver al índice
             </a></b>
         </article>
+
+<!-- PUNTO 4 - TIPOS DE CLAVES                  -->
+
         <article>
-            <h2 id="3">
+            <h2 id="4">
                 TIPOS DE CLAVES
             </h2>
             <ul>
@@ -172,8 +187,11 @@
                 Volver al índice
             </a></b>
         </article>
+
+<!-- PUNTO 5 - RESTINCIONES                     -->
+
         <article>
-            <h2 id="4">
+            <h2 id="5">
                 RESTRINCIONES
             </h2>
             <ul>
@@ -239,15 +257,18 @@
                 Volver al índice
             </a></b>
         </article>
+
+<!-- PUNTO 6, 7, 8 - PASO AL MODELO RELACIONAL  -->
+
         <article>
-            <h2 id="5">
+            <h2 id="6">
                 PASO DEL MODELO E/R AL RELACIONAL
             </h2>
                 <p>
                     La regla básica es que las entidades se van a transformar en tablas, y las relaciones crerán o no un a tabla dependiendo de su cardinalidad.
 
                 </p>
-            <h3 id="6">
+            <h3 id="7">
                 TRANSFORMACIÓN DE LAS ENTIDADES FUERTES
             </h3>
             <p>
@@ -264,10 +285,13 @@
                 </li>
             </ul>
             </p>
-            <b><a href="./gbd-T4.html#1">
-                Volver al índice
-            </a></b>
-            <h3 id="7">
+
+<!-- BOTÓN ARRIBA -->
+<b><a href="./gbd-T4.html#1">
+Volver al índice
+</a></b>
+
+            <h3 id="8">
                 TRANSFORMACIÓN DE LAS RELACIONES
             </h3>
             <p>
@@ -349,13 +373,97 @@
                             <li>
                                 En el caso de que las subentidades tengan clave propia se colocará en las subentidades el identificador de la superentidad como clave secundaria.
                             </li>
+                            <li>
+                                No hay manera única para transformarlas.
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </p>
+            <!-- BOTÓN VUELTA INICIO -->
             <b><a href="./gbd-T4.html#1">
                 Volver al índice
             </a></b>
+        </article>
+
+<!-- PUNTO 9 -                                  -->
+
+        <article>
+            <h3 id="9">
+                Representación de esquemas de BDs
+            </h3>
+            <p>
+                El objetivo es ver como se representa un modelo relaciona. 
+                <ul>
+                    <li>
+                        <h4>
+                            Grafo relacional
+                        </h4>
+                        <ul>
+                            <li>
+                                Es un esquema relacional en el que hay lineas que enlazan las claves principales con las secundarias para representar mejor las relaciones.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>
+                            Esquemas deribados del E/R
+                        </h4>
+                        <ul>
+                            <li>
+                                Tipo de notación habitual el las herramientas CASI
+                                <ul>
+                                    <li>
+                                        La cardinalidad tipo n se dibuja usando las patas de gallo
+                                    </li>
+                                    <li>
+                                        La cardinalidad tipo 0 con un circulo abierto o 
+                                    </li>
+                                    <li>
+                                        La cardinalidad tipo 1 con una barra vertical |
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>
+                            Estilo accces
+                        </h4>
+                        <ul>
+                            <li>
+                                Pretende resolver problemas en el esquema conceptual, una vez obtenido el esquema relacional, el esquema E/R que representa la base de datos normalmente será correcta, pero otras veces, debido a fallos en el diseño o problemas indetectables tendremos un esquema que puede producir una base de datos que incorpore alguno de estos problenas:
+                                <ul>
+                                    <li>
+                                        Redundancia - Datos que se repiten continua e inecesariamente por las tablas en la base de datos, es el primer síntoma de problemas y se ve facilmente.
+                                    </li>
+                                    <li>
+                                        Ambiguedades - Datos que no clarifican suficientemente al eleme to al que representan, por ejemplo los datos de cada fila podrían referirse a un ejemplar de cada tabla o incluso puede ser imposible saaber a qué ejemplar exactamente se está refiriendo, es un problema grave y dficil de detectar.
+                                    </li>
+                                    <li>
+                                        Pérdidas de restrinción de integridad - Normalmente debido a dependencias funcionales, anomalías en operaciones de mdificación de datos.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                En cualquier caso la mayor parte se agraban si no se usa el esquema relacional sin hacer el conceptual o E/R. 
+                <br>
+                Las formas normales se siguen por las normas creadas de CODD y continuada por otros autores, hay hasta 5 formas normales y nosotros veremos 3. 
+                <br>
+                <ul>
+                    <li>
+                        Una tablas puede encontrarse en 1º forma normal puede y no en segunda 2º pero no al contrario, es decir es una cadena, se asume que el nurmero superior asume al anterior.
+                    </li>
+                </ul> 
+            </p>
+
+<!-- BOTÓN ARRIBA                               -->
+<b><a href="./gbd-T4.html#1">
+    Volver al índice
+</a></b>
+
         </article>
     </section>
 </body>
