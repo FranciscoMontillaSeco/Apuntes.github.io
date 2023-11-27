@@ -338,7 +338,15 @@ Volver al índice
                                 Relaciones 1 a 1:
                             </h4>
                             <li>
-                                En estas relaciones solo se crea una tabla, absorviendo una entidad a la otra.
+                                En estas relaciones solo se crea una tabla, absorviendo una entidad a la otra. En el caso de las relaciones entre dos entidades co todas las cardinalidades a 1 hay dos posibilidades:
+                                <ul>
+                                    <li>
+                                        Colocar la clave de una de las entidades como clave externa de la otra tabla, teniendo en cuenta que dicha clave será clave alternativa además de ser clave secundaria.
+                                    </li>
+                                    <li>
+                                        Generar una única tabla con todos los atributos de ambas entidades colocando como clave principal las cualquiera de las claves principales de una de las dos la otra será marcada como alternativa, el nombre de la tabla será el que más 
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -463,8 +471,8 @@ Volver al índice
 <b><a href="./gbd-T4.html#1">
     Volver al índice
 </a></b>
-
         </article>
+
     </section>
 </body>
 </html>

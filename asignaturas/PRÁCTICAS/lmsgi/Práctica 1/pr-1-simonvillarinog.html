@@ -9,7 +9,7 @@
 </head>
 <body>
     <form action="registro" method="post">
-        <table border="1" align="center">
+        <table border="1">
             <tbody>
                 <tr>
                     <td colspan="2">
@@ -19,8 +19,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td rowspan="3">
-                        <img src="Imágenes incluidas/cartel.jpg" alt="">
+                    <td rowspan="3" style="width: 40%;">
+                        <img src="Imágenes incluidas/cartel.jpg" alt="cartel informativo" height="500">
                     </td>
                     <td>
                         <label for="dni/nif">
@@ -50,7 +50,6 @@
                         <br>
                         <hr>
                         <br>
-                        <br>
                         <label for="ciudad">
                             Ciudad de procedencia 
                         </label>
@@ -67,42 +66,73 @@
                             <legend>
                                 Institución de origen
                             </legend>
-                            <label for="ni">
-                                Nombre de la institución *:
-                            </label>
-                            <input type="text" placeholder="Institución">
-                            <label for="dire">
-                                Dirección de la institución *:
-                            </label>
-                            <input type="text" placeholder="Calle - Número - CP - Provincia">
-                                <fieldset>
-                                    <legend>
-                                        Tipo de Institución*
-                                    </legend>
-                                    <input type="radio" name="ce" id="ce">
-                                    <label for="ce">
-                                        Centro educativo
-                                    </label>
-                                    <br>
-                                    <input type="radio" name="ip" id="ip">                 
-                                    <label for="ip">
-                                        Institución pública 
-                                    </label>           
-                                    <br>   
-                                    <input type="radio" name="ep" id="ep">
-                                    <label for="ep">
-                                        Empresa privada
-                                    </label>
-                                    <br>
-                                    <input type="radio" name="o" id="o">
-                                    <label for="o">
-                                        Otros / Independiente
-                                    </label>
-                                </fieldset>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <fieldset>
+                                            <legend>
+                                                Tipo de Institución*
+                                            </legend>
+                                            <input type="radio" name="ce" id="ce">
+                                            <label for="ce">
+                                                Centro educativo
+                                            </label>
+                                            <br>
+                                            <input type="radio" name="ip" id="ip">                 
+                                            <label for="ip">
+                                                Institución pública 
+                                            </label>           
+                                            <br>   
+                                            <input type="radio" name="ep" id="ep">
+                                            <label for="ep">
+                                                Empresa privada
+                                            </label>
+                                            <br>
+                                            <input type="radio" name="o" id="o">
+                                            <label for="o">
+                                                Otros / Independiente
+                                            </label>
+                                        </fieldset>
+                                    </td>
+                                    <td>
+                                        <label for="ni">
+                                            Nombre de la institución *:
+                                        </label>
+                                        <br>
+                                        <input type="text" placeholder="Institución">
+                                        <br>
+                                        <label for="dire">
+                                            Dirección de la institución *:
+                                            <br>
+                                            <textarea name="dire" id="dire" cols="20" rows="4" placeholder="Calle - Número - CP - Provincia">
+                                            </textarea>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>                                
                         </fieldset>
+                        <hr>           
+                        <br>
+                        <input type="checkbox" name="ppd" id="ppd">
+                        <label for="ppd">
+                            He leído y acepto la <a href="ppd.html" target="_parent"> política de protección de datos</a>*.
+                        </label>
+                    </td>             
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="send" id="send">
+                        <input type="reset">
                     </td>
                 </tr>
             </tbody>
+            <tfoot style="text-align: center;">
+                <tr>
+                    <td colspan="2" >
+                        <b><em> Centro Don Bosco 1: 34190, Villamuriel de cerrato <br> Tlfno: 979 77 72 70 </em></b>
+                    </td>
+                </tr>
+            </tfoot>
         </table>
     </form>
 </body>
