@@ -20,33 +20,33 @@
                 </tr>
                 <tr>
                     <td rowspan="3" style="width: 40%;">
-                        <img src="Imágenes incluidas/cartel.jpg" alt="cartel informativo" height="500">
+                        <img src="imagenes/cartel.jpg" alt="cartel informativo" height="500">
                     </td>
                     <td>
                         <label for="dni/nif">
                             DNI/NIF *:
                         </label>
-                        <input type="text" id="dni/nif" name="dni/nif" pattern="[A-Z]{0,1}[1-9]{8}[A-Z]{1}" placeholder="DNI/NIF">
+                        <input required type="text" id="dni/nif" name="dni/nif" pattern="[A-Z]{0,1}[1-9]{8}[A-Z]{1}" placeholder="DNI/NIF" required>
                         <br>
                         <label for="nombre">
                             Nombre *:
                         </label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <input required type="text" id="nombre" name="nombre" placeholder="Nombre">
                         <br>
                         <label for="apellidos">
                             Apellidos *:
                         </label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Apellidos">
+                        <input required type="text" id="apellido" name="apellido" placeholder="Apellidos">
                         <br>
                         <label for="correo">
                             E-Mail *:
                         </label>
-                        <input type="email" placeholder="E-mail">
+                        <input required type="email" placeholder="E-mail">
                         <br>
                         <label for="fecha">
                             Nacimiento *:
                         </label>
-                        <input type="date" id="fecha" name="fecha">
+                        <input required type="date" id="fecha" name="fecha">
                         <br>
                         <hr>
                         <br>
@@ -73,22 +73,22 @@
                                             <legend>
                                                 Tipo de Institución*
                                             </legend>
-                                            <input type="radio" name="ce" id="ce">
+                                            <input checked required type="radio" name="ti" id="ce">
                                             <label for="ce">
                                                 Centro educativo
                                             </label>
                                             <br>
-                                            <input type="radio" name="ip" id="ip">                 
+                                            <input checked required type="radio" name="ti" id="ce">                 
                                             <label for="ip">
                                                 Institución pública 
                                             </label>           
                                             <br>   
-                                            <input type="radio" name="ep" id="ep">
+                                            <input checked required type="radio" name="ti" id="ce">
                                             <label for="ep">
                                                 Empresa privada
                                             </label>
                                             <br>
-                                            <input type="radio" name="o" id="o">
+                                            <input checked required type="radio" name="ti" id="ce">
                                             <label for="o">
                                                 Otros / Independiente
                                             </label>
@@ -99,12 +99,12 @@
                                             Nombre de la institución *:
                                         </label>
                                         <br>
-                                        <input type="text" placeholder="Institución">
+                                        <input required type="text" placeholder="Institución">
                                         <br>
                                         <label for="dire">
                                             Dirección de la institución *:
                                             <br>
-                                            <textarea name="dire" id="dire" cols="20" rows="4" placeholder="Calle - Número - CP - Provincia">
+                                            <textarea required name="dire" id="dire" cols="20" rows="4" placeholder="Calle - Número - CP - Provincia">
                                             </textarea>
                                         </label>
                                     </td>
@@ -113,9 +113,9 @@
                         </fieldset>
                         <hr>           
                         <br>
-                        <input type="checkbox" name="ppd" id="ppd">
+                        <input required type="checkbox" name="ppd" id="ppd">
                         <label for="ppd">
-                            He leído y acepto la <a href="ppd.html" target="_parent"> política de protección de datos</a>*.
+                            He leído y acepto la <a href="ppd-svg.html" target="_parent"> política de protección de datos</a>*.
                         </label>
                     </td>             
                 </tr>
@@ -129,7 +129,7 @@
             <tfoot style="text-align: center;">
                 <tr>
                     <td colspan="2" >
-                        <b><em> Centro Don Bosco 1: 34190, Villamuriel de cerrato <br> Tlfno: 979 77 72 70 </em></b>
+                        <b><em> Centro Don Bosco, paseo Don Bosco 1: 34190, Villamuriel de cerrato <br> Tlfno: 979 77 72 70 </em></b>
                     </td>
                 </tr>
             </tfoot>
