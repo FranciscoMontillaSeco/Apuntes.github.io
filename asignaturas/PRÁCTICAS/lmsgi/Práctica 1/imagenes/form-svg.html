@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Formulario inscripción
+    </title>
+</head>
+<body>
+    <form action="registro" method="post">
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <h1>
+                            Registro de asistentes a las Jornadas de seguridad
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="width: 40%;">
+                        <img src="cartel.jpg" alt="cartel informativo" height="500">
+                    </td>
+                    <td>
+                        <label for="dni/nif">
+                            DNI/NIF *:
+                        </label>
+                        <input required type="text" id="dni/nif" name="dni/nif" pattern="[A-Z]{0,1}[1-9]{8}[A-Z]{1}" placeholder="DNI/NIF">
+                        <br>
+                        <label for="nombre">
+                            Nombre *:
+                        </label>
+                        <input required type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <br>
+                        <label for="apellidos">
+                            Apellidos *:
+                        </label>
+                        <input required type="text" id="apellido" name="apellido" placeholder="Apellidos">
+                        <br>
+                        <label for="correo">
+                            E-Mail *:
+                        </label>
+                        <input required type="email" placeholder="E-mail">
+                        <br>
+                        <label for="fecha">
+                            Nacimiento *:
+                        </label>
+                        <input required type="date" id="fecha" name="fecha">
+                        <br>
+                        <hr>
+                        <br>
+                    <!-- GRUPO DE CAPITALES ESPAÑA -->                    
+                    <label for="capitales">Selecciona una capital:</label>
+                    <select id="capitales" name="capitales">
+                    <!-- Andalucía -->
+                            <optgroup label="Andalucía">
+                            <option value="almeria">
+                                Almería
+                            </option>
+                            <option value="cadiz">
+                                Cádiz
+                            </option>
+                            <option value="cordoba">
+                                órdoba
+                            </option>
+                            <option value="granada">
+                                Granada
+                            </option>
+                            <option value="huelva">
+                                Huelva
+                            </option>
+                            <option value="jaen">
+                                Jaén
+                            </option>
+                            <option value="malaga">
+                                Málaga
+                            </option>
+                            <option value="sevilla">
+                                Sevilla
+                            </option>
+                            </optgroup>
+                    <!-- Aragón -->
+                            <optgroup label="Aragón">
+                            <option value="huesca">
+                                Huesca
+                            </option>
+                            <option value="teruel">
+                                Teruel
+                            </option>
+                            <option value="zaragoza">
+                                Zaragoza
+                            </option>
+                            </optgroup>
+                    <!-- Asturias -->
+                            <optgroup label="Asturias">
+                            <option value="oviedo">
+                                Oviedo
+                            </option>
+                            <option value="gijon">
+                                Gijón
+                            </option>
+                            <option value="aviles">
+                                Avilés
+                            </option>
+                            </optgroup>
+                    <!-- Canarias -->
+                            <optgroup label="Canarias">
+                            <option value="santacruzdetenerife">
+                                Santa Cruz de Tenerife
+                            </option>
+                            <option value="laspalmasdegrancanaria">
+                                Las Palmas de Gran Canarias
+                            </option>
+                            </optgroup>
+                    <!-- Cantabria -->
+                            <optgroup label="Cantabria">
+                            <option value="santander">
+                                Santander
+                            </option>
+                            </optgroup>
+                    <!-- Castilla y León -->
+                            <optgroup label="Castilla y León">
+                            <option value="avila">
+                                Ávila
+                            </option>
+                            <option value="burgos">
+                                Burgos
+                            </option>
+                            <option value="leon">
+                                León
+                            </option>
+                            <option value="palencia">
+                                Palencia
+                            </option>
+                            <option value="salamanca">
+                                Salamanca
+                            </option>
+                            <option value="segovia">
+                                Segovia
+                            </option>
+                            <option value="soria">
+                                Soria
+                            </option>
+                            <option value="valladolid">
+                                Valladolid
+                            </option>
+                            <option value="zamora">
+                                Zamora
+                            </option>
+                            </optgroup>
+                    <!-- Castilla-La Mancha -->
+                            <optgroup label="Castilla-La Mancha">
+                            <option value="albacete">
+                                Albacete
+                            </option>
+                            <option value="ciudadreal">
+                                Ciudad Real
+                            </option>
+                            <option value="cuenca">
+                                Cuenca
+                            </option>
+                            <option value="guadalajara">
+                                Guadalajara
+                            </option>
+                            <option value="toledo">
+                                Toledo
+                            </option>
+                            </optgroup>
+                    <!-- Cataluña -->
+                            <optgroup label="Cataluña">
+                            <option value="barcelona">
+                                Barcelona
+                            </option>
+                            <option value="girona">
+                                Girona
+                            </option>
+                            <option value="lleida">
+                                Lleida
+                            </option>
+                            <option value="tarragona">
+                                Tarragona
+                            </option>
+                            </optgroup>
+                    <!-- Extremadura -->
+                            <optgroup label="Extremadura">
+                            <option value="badajoz">
+                                Badajoz
+                            </option>
+                            <option value="caceres">
+                                Cáceres
+                            </option>
+                            </optgroup>
+                    <!-- Galicia -->
+                            <optgroup label="Galicia">
+                            <option value="acoruna">
+                                A Coruña
+                            </option>
+                            <option value="lugo">
+                                Lugo
+                            </option>
+                            <option value="ourense">
+                                Ourense
+                            </option>
+                            <option value="pontevedra">
+                                Pontevedra
+                            </option>
+                            </optgroup>
+                    <!-- Islas Baleares -->
+                            <optgroup label="Islas Baleares">
+                            <option value="palma">
+                                Palma
+                            </option>
+                            </optgroup>
+                    <!-- La Rioja -->
+                            <optgroup label="La Rioja">
+                            <option value="larioja">
+                                La Rioja
+                            </option>
+                            </optgroup>
+                    <!-- Madrid -->
+                            <optgroup label="Madrid">
+                            <option value="madrid">
+                                Madrid
+                            </option>
+                            </optgroup>
+                    <!-- Murcia -->
+                            <optgroup label="Murcia">
+                            <option value="murcia">
+                                Murcia
+                            </option>
+                            </optgroup>
+                    <!-- Navarra -->
+                            <optgroup label="Navarra">
+                            <option value="pamplona">
+                                Pamplona
+                            </option>
+                            </optgroup>
+                    <!-- País Vasco -->
+                            <optgroup label="País Vasco">
+                            <option value="bilbao">
+                                Bilbao
+                            </option>
+                            <option value="sansebastian">
+                                San Sebastián
+                            </option>
+                            <option value="vitoria">
+                                Vitoria
+                            </option>
+                            </optgroup>
+                    <!-- Valencia -->
+                            <optgroup label="Comunidad Valenciana">
+                            <option value="alicante">
+                                Alicante
+                            </option>
+                            <option value="castellon">
+                                Castellón
+                            </option>
+                            <option value="valencia">
+                                Valencia
+                            </option>
+                            </optgroup>
+                    </select>
+                        <br>
+                        <br>
+                        <fieldset>
+                            <legend>
+                                Institución de origen
+                            </legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <fieldset>
+                                            <legend>
+                                                Tipo de Institución*
+                                            </legend>
+                                            <input checked required type="radio" name="ti" id="ce">
+                                            <label for="ce">
+                                                Centro educativo
+                                            </label>
+                                            <br>
+                                            <input checked required type="radio" name="ti" id="ce">                 
+                                            <label for="ip">
+                                                Institución pública 
+                                            </label>           
+                                            <br>   
+                                            <input checked required type="radio" name="ti" id="ce">
+                                            <label for="ep">
+                                                Empresa privada
+                                            </label>
+                                            <br>
+                                            <input checked required type="radio" name="ti" id="ce">
+                                            <label for="o">
+                                                Otros / Independiente
+                                            </label>
+                                        </fieldset>
+                                    </td>
+                                    <td>
+                                        <label for="ni">
+                                            Nombre de la institución *:
+                                        </label>
+                                        <br>
+                                        <input required type="text" placeholder="Institución">
+                                        <br>
+                                        <label for="dire">
+                                            Dirección de la institución *:
+                                            <br>
+                                            <textarea required name="dire" id="dire" cols="20" rows="4" placeholder="Calle - Número - CP - Provincia">
+                                            </textarea>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>                                
+                        </fieldset>
+                        <hr>           
+                        <br>
+                        <input required type="checkbox" name="ppd" id="ppd">
+                        <label for="ppd">
+                            He leído y acepto la <a href="ppd-svg.html" target="_parent"> política de protección de datos</a>*.
+                        </label>
+                    </td>             
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="send" id="send" value="Enviar">
+                        <input type="reset" value="Reiniciar">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot style="text-align: center;">
+                <tr>
+                    <td colspan="2" >
+                        <b><em> Centro Don Bosco, paseo Don Bosco 1: 34190, Villamuriel de cerrato <br> Tlfno: 979 77 72 70 </em></b>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
