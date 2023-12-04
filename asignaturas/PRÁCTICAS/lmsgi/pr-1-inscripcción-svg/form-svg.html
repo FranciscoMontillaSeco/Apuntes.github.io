@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Formulario inscripción
+    </title>
+</head>
+<body>
+    <form action="registro" method="post">
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <h1>
+                            Registro de asistentes a las Jornadas de seguridad
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="width: 40%;">
+                        <img src="imagenes/cartel.jpg" alt="cartel informativo" height="500">
+                    </td>
+                    <td>
+                        <label for="dni/nif">
+                            DNI/NIF *:
+                        </label>
+                        <input required type="text" id="dni/nif" name="dni/nif" pattern="[A-Z]{0,1}[1-9]{8}[A-Z]{1}" placeholder="DNI/NIF" required>
+                        <br>
+                        <label for="nombre">
+                            Nombre *:
+                        </label>
+                        <input required type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <br>
+                        <label for="apellidos">
+                            Apellidos *:
+                        </label>
+                        <input required type="text" id="apellido" name="apellido" placeholder="Apellidos">
+                        <br>
+                        <label for="correo">
+                            E-Mail *:
+                        </label>
+                        <input required type="email" placeholder="E-mail">
+                        <br>
+                        <label for="fecha">
+                            Nacimiento *:
+                        </label>
+                        <input required type="date" id="fecha" name="fecha">
+                        <br>
+                        <hr>
+                        <br>
+                        <label for="ciudad">
+                            Ciudad de procedencia 
+                        </label>
+                        <select name="ciudad" id="ciudad">
+                            <optgroup>
+                                <option value="">
+                                    Palencia
+                                </option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <br>
+                        <fieldset>
+                            <legend>
+                                Institución de origen
+                            </legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <fieldset>
+                                            <legend>
+                                                Tipo de Institución*
+                                            </legend>
+                                            <input checked required type="radio" name="ti" id="ce">
+                                            <label for="ce">
+                                                Centro educativo
+                                            </label>
+                                            <br>
+                                            <input checked required type="radio" name="ti" id="ce">                 
+                                            <label for="ip">
+                                                Institución pública 
+                                            </label>           
+                                            <br>   
+                                            <input checked required type="radio" name="ti" id="ce">
+                                            <label for="ep">
+                                                Empresa privada
+                                            </label>
+                                            <br>
+                                            <input checked required type="radio" name="ti" id="ce">
+                                            <label for="o">
+                                                Otros / Independiente
+                                            </label>
+                                        </fieldset>
+                                    </td>
+                                    <td>
+                                        <label for="ni">
+                                            Nombre de la institución *:
+                                        </label>
+                                        <br>
+                                        <input required type="text" placeholder="Institución">
+                                        <br>
+                                        <label for="dire">
+                                            Dirección de la institución *:
+                                            <br>
+                                            <textarea required name="dire" id="dire" cols="20" rows="4" placeholder="Calle - Número - CP - Provincia">
+                                            </textarea>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>                                
+                        </fieldset>
+                        <hr>           
+                        <br>
+                        <input required type="checkbox" name="ppd" id="ppd">
+                        <label for="ppd">
+                            He leído y acepto la <a href="ppd-svg.html" target="_parent"> política de protección de datos</a>*.
+                        </label>
+                    </td>             
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="send" id="send">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot style="text-align: center;">
+                <tr>
+                    <td colspan="2" >
+                        <b><em> Centro Don Bosco, paseo Don Bosco 1: 34190, Villamuriel de cerrato <br> Tlfno: 979 77 72 70 </em></b>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
